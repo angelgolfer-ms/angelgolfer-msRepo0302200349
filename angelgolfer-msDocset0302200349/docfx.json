@@ -4,7 +4,8 @@
       {
         "files": [
           "**/*.md",
-          "**/*.yml"
+          "**/*.yml",
+          "*.yml"
         ],
         "exclude": [
           "**/obj/**",
@@ -35,12 +36,11 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/angelgolfer-msDocset0302200349/breadcrumb/toc.json",
+      "breadcrumb_path": "/jamescroDocset0131213411/breadcrumb/toc.json",
       "extendBreadcrumb": true
     },
     "fileMetadata": {},
     "template": [],
-    "dest": "angelgolfer-msDocset0302200349",
-    "markdownEngineName": "markdig"
+    "dest": "jamescroDocset0131213411"
   }
 }
