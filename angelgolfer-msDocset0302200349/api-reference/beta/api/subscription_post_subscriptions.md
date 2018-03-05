@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Subscribes a listener application to receive notifications when data on the Microsoft Graph changes.
+Subscribes a listener application to receive notifications when data on Microsoft Graph changes.
 
 ## Permissions
 Creating a subscription requires read permission to the resource. For example, to get notifications messages, your app needs the `Mail.Read` permission. The following table lists the suggested permission needed for each resource. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
