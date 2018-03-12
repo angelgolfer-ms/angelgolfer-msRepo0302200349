@@ -18,7 +18,7 @@
 ## [Visual Studio Connected Services](concepts/office_365_connected_services.md)
 ## [Xamarin](concepts/xamarin.md)
 
-# Learn 
+# --------------------
 # [Mail (Outlook)](concepts\outlook-mail-concept-overview.md)
 ## [Create and send messages](concepts\outlook-create-send-messages.md)
 ## [Organize messages](concepts\outlook-organize-messages.md)
@@ -34,6 +34,8 @@
 ## [Use workbook functions](concepts\use-functions-in-excel-with-microsoft-graph.md)
 ## [Update a range format](concepts\update-range-format-in-excel-with-microsoft-graph.md)
 ## [Write data to a workbook](concepts\write-to-excel-workbook-with-microsoft-graph.md)
+
+# --------------------
 
 # Develop 
 ## [Get auth tokens](concepts/auth_overview.md)
