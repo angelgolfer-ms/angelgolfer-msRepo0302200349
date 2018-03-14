@@ -36,6 +36,7 @@
 ## [Write data to a workbook](concepts\write-to-excel-workbook-with-microsoft-graph.md)
 
 # Develop 
+# [Use the API](concepts\use_the_api.md)
 ## [Get auth tokens](concepts/auth_overview.md)
 ### [Register your app](concepts/auth_register_app_v2.md)
 ### [Get access on behalf of a user](concepts/auth_v2_user.md)
