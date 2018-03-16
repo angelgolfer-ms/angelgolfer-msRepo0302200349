@@ -1,9 +1,10 @@
 # [Overview](concepts/overview.md)
-## [Services in Microsoft Graph](concepts/overview-major-services.md)
 ## Users you can reach
 ### [National cloud deployments](concepts/deployments.md)
 ### [Hybrid deployments (preview)](concepts/hybrid_rest_support.md)
-# [Build your first app](concepts/get-started.md)
+## [Versioning and support](concepts/versioning_and_support.md)
+# [Services in Microsoft Graph](concepts/overview-major-services.md)
+# [Quick starts](concepts/get-started.md)
 ## [Android](concepts/android.md)
 ## [Angular](concepts/angular.md)
 ## [ASP.NET MVC](concepts/aspnetmvc.md)
@@ -18,16 +19,20 @@
 ## [Visual Studio Connected Services](concepts/office_365_connected_services.md)
 ## [Xamarin](concepts/xamarin.md)
 
-# --------------------
+# LEARN 
+# [Users and identity](concepts\azuread-users-identity-concept-overview.md)
+# [Groups](concepts\office365-groups-concept-overview.md)
 # [Mail (Outlook)](concepts\outlook-mail-concept-overview.md)
 ## [Create and send messages](concepts\outlook-create-send-messages.md)
 ## [Organize messages](concepts\outlook-organize-messages.md)
 ## [Share message folders](concepts\outlook-share-messages-folders.md)
+# [Mobile app and devices (Intune)](concepts\intune-mobile-app-device-concept-overview.md)
 # [Notes (OneNote)](concepts/integrate_with_onenote.md)
 ## [Input and output HTML](concepts/onenote_input_output_html.md)
 ## [Open the OneNote client](concepts/open_onenote_client.md)
 ## [Error codes](concepts/onenote_error_codes.md)
 ## [Best practices](concepts/onenote_best_practices.md)
+# [Permissions and policies (Azure AD)](concepts/azuread-permissions-policies-concept-overview.md)
 # [Workbooks and charts (Excel)](concepts\excel-content-overview.md)
 ## [Manage sessions](concepts\manage-sessions-in-excel-with-microsoft-graph.md)
 ## [Display a chart image](concepts\display-a-chart-image-in-excel-with-microsoft-graph.md)
@@ -35,16 +40,15 @@
 ## [Update a range format](concepts\update-range-format-in-excel-with-microsoft-graph.md)
 ## [Write data to a workbook](concepts\write-to-excel-workbook-with-microsoft-graph.md)
 
-# --------------------
-
-# Develop 
-## [Get auth tokens](concepts/auth_overview.md)
-### [Register your app](concepts/auth_register_app_v2.md)
-### [Get access on behalf of a user](concepts/auth_v2_user.md)
-### [Get access without a user](concepts/auth_v2_service.md)
-### [Permissions](concepts/permissions_reference.md)
-### [Manage app access (CSPs)](concepts/auth_cloudsolutionprovider.md)
-## [Webhooks](api-reference/v1.0/resources/webhooks.md)
+# DEVELOP 
+# [Get auth tokens](concepts/auth_overview.md)
+## [Register your app](concepts/auth_register_app_v2.md)
+## [Get access on behalf of a user](concepts/auth_v2_user.md)
+## [Get access without a user](concepts/auth_v2_service.md)
+## [Permissions](concepts/permissions_reference.md)
+## [Manage app access (CSPs)](concepts/auth_cloudsolutionprovider.md)
+# [Use the API](concepts\use_the_api.md)
+## [Set up notifications](api-reference/v1.0/resources/webhooks.md)
 ## [Track changes](concepts/delta_query_overview.md)
 ### [Get changes to events (example)](concepts/delta_query_events.md)
 ### [Get changes to groups (example)](concepts/delta_query_groups.md)
@@ -57,9 +61,7 @@
 ## [Paging](concepts/paging.md)
 ## [Batch requests](concepts/json_batching.md)
 ## [Throttling](concepts/throttling.md)
-
-# Resources 
-## [Versioning and support](concepts/versioning_and_support.md)
+## RESOURCES 
 ## [Changelog](concepts/changelog.md)
 ## [Known issues](concepts/known_issues.md)
 ## [Errors](concepts/errors.md)

@@ -76,7 +76,7 @@ Reports
 -->
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-|Groups | Azure AD, OneDrive, OneNote, Outlook, Planner | Office 365 groups for users to share conversations, files, notes, calendar, and plans. | [Groups API overview](../api-reference/v1.0/resources/groups-overview.md) |
+|Groups | Azure AD, OneDrive, OneNote, Outlook, Planner | Office 365 groups for users to share conversations, files, notes, calendar, and plans. | [Office 365 groups overview](../concepts/office365-groups-concept-overview.md) |
 |Plans and tasks | Planner | Enables Office 365 groups to create plans, assign tasks, and track progress. | [Planner API overview](../api-reference/v1.0/resources/planner_overview.md) |
 | Shared sites and content  | SharePoint | Web-based platform for users and Office 365 groups to share and manage content (including lists, files, and notes). | [SharePoint API overview](../api-reference/v1.0/resources/sharepoint.md) | 
 |Teamwork (preview) |  Microsoft Teams | Chat-based workspace for teams to share files, notes, calendar, and plans. | [Microsoft Teams API overview](../api-reference/beta/resources/teams_api_overview.md) |
@@ -86,23 +86,23 @@ Reports
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Users and identity management | Azure AD | Manages key directory resources such as users, groups, administrative units, applications, and devices. | [Azure Active Directory API overview](../api-reference/beta/resources/azure_ad_overview.md)  |
-| Invitation manager | Azure AD | Creates an invitation to an external user to join an organization. | [invitation resource type](../api-reference/v1.0/resources/invitation.md) |
-| Privileged identity management (preview) | Azure AD | Manages, controls, and monitors access within an organization.  | [Azure AD privileged identity management](../api-reference/beta/resources/privilegedidentitymanagement_root.md)  |
+| Users and identity management | Azure AD | Creates and manages directory resources such as users, groups, and applications. | [Azure AD users and identity management overview](../concepts/azuread-users-identity-concept-overview.md)  |
+| Policies and permissions | Azure AD | Grants users, groups, and applications access to resources and data. | [Azure AD permissions and policies overview](../concepts/azuread-permissions-policies-concept-overview.md) |
 
 
 ## Security intelligence
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Identity risk detection | Azure AD | Get information about risk events in user accounts detected by adaptive machine learning. | [Azure AD identity protection](../api-reference/beta/resources/identityprotection_root.md)  |
+| Identity risk detection | Azure AD | Gets information about risk events in user accounts detected by adaptive machine learning. | [Azure AD identity protection](../api-reference/beta/resources/identityprotection_root.md)  |
+| Security | Azure AD | Provides a unified gateway to security insights and actions across Microsoft solutions. |  |
 
 
-## Enterprise mobililty management
+## Device management
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-|Enterprise mobility management | Intune | Provides security tools for organizations and their employees to access company data irrespective of the data location (cloud, on-premises, or on device), device, or application type (store, web, or LOB apps). | [Intune API overview](../api-reference/v1.0/resources/intune_graph_overview.md) |
+|Mobile app and device management | Intune | Manages your organization’s mobile applications, and enrolls and configures devices. | [Intune device and mobbile app management overview](../concepts/intune-mobile-app-device-management-concept-overview.md) |
 
 
 ## Usage reports and audit logs
