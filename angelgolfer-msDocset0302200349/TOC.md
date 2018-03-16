@@ -3,7 +3,8 @@
 ## Users you can reach
 ### [National cloud deployments](concepts/deployments.md)
 ### [Hybrid deployments (preview)](concepts/hybrid_rest_support.md)
-# [Build your first app](concepts/get-started.md)
+## [Versioning and support](concepts/versioning_and_support.md)
+# [Quick starts](concepts/get-started.md)
 ## [Android](concepts/android.md)
 ## [Angular](concepts/angular.md)
 ## [ASP.NET MVC](concepts/aspnetmvc.md)
@@ -18,7 +19,7 @@
 ## [Visual Studio Connected Services](concepts/office_365_connected_services.md)
 ## [Xamarin](concepts/xamarin.md)
 
-# Learn 
+# LEARN 
 # [Mail (Outlook)](concepts\outlook-mail-concept-overview.md)
 ## [Create and send messages](concepts\outlook-create-send-messages.md)
 ## [Organize messages](concepts\outlook-organize-messages.md)
@@ -35,15 +36,15 @@
 ## [Update a range format](concepts\update-range-format-in-excel-with-microsoft-graph.md)
 ## [Write data to a workbook](concepts\write-to-excel-workbook-with-microsoft-graph.md)
 
-# Develop 
+# DEVELOP 
+# [Get auth tokens](concepts/auth_overview.md)
+## [Register your app](concepts/auth_register_app_v2.md)
+## [Get access on behalf of a user](concepts/auth_v2_user.md)
+## [Get access without a user](concepts/auth_v2_service.md)
+## [Permissions](concepts/permissions_reference.md)
+## [Manage app access (CSPs)](concepts/auth_cloudsolutionprovider.md)
 # [Use the API](concepts\use_the_api.md)
-## [Get auth tokens](concepts/auth_overview.md)
-### [Register your app](concepts/auth_register_app_v2.md)
-### [Get access on behalf of a user](concepts/auth_v2_user.md)
-### [Get access without a user](concepts/auth_v2_service.md)
-### [Permissions](concepts/permissions_reference.md)
-### [Manage app access (CSPs)](concepts/auth_cloudsolutionprovider.md)
-## [Webhooks](api-reference/v1.0/resources/webhooks.md)
+## [Set up notifications](api-reference/v1.0/resources/webhooks.md)
 ## [Track changes](concepts/delta_query_overview.md)
 ### [Get changes to events (example)](concepts/delta_query_events.md)
 ### [Get changes to groups (example)](concepts/delta_query_groups.md)
@@ -56,9 +57,7 @@
 ## [Paging](concepts/paging.md)
 ## [Batch requests](concepts/json_batching.md)
 ## [Throttling](concepts/throttling.md)
-
-# Resources 
-## [Versioning and support](concepts/versioning_and_support.md)
+## RESOURCES 
 ## [Changelog](concepts/changelog.md)
 ## [Known issues](concepts/known_issues.md)
 ## [Errors](concepts/errors.md)
