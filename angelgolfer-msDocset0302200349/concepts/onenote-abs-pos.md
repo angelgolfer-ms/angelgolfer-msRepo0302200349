@@ -127,17 +127,15 @@ To create or update OneNote pages, you'll need to request appropriate permission
 
 **Permissions for _POST pages_**
 
-| Platform | Permission scope |
-|------|------|
-| Consumer | office.onenote_create, office.onenote_update_by_app, office.onenote_update |
-| Enterprise | Notes.Create, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, Notes.ReadWrite.All |  
+|  Permission scope |
+|------|
+|  Notes.Create, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, Notes.ReadWrite.All |  
 
 **Permissions for _PATCH pages_**
 
-| Platform | Permission scope |
-|------|------|
-| Consumer | office.onenote_update_by_app, office.onenote_update |
-| Enterprise | Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, Notes.ReadWrite.All |  
+| Permission scope |
+|------|
+| Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, Notes.ReadWrite.All |  
 
 For more information about permission scopes and how they work, see [OneNote permission scopes](../howto/onenote-auth.md).
 
