@@ -4,6 +4,6 @@
 
 ## Why integrate with Azure AD permissions and policies?
 
-{<=1.5 pages of value proposition for developers of your service.}
+{<=1.5 pages of value proposition for developers.}
 
 ## Next steps

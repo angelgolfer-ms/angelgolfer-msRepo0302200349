@@ -76,7 +76,7 @@ Reports
 -->
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-|Groups | Azure AD, OneDrive, OneNote, Outlook, Planner | Office 365 groups for users to share conversations, files, notes, calendar, and plans. | [Groups API overview](../api-reference/v1.0/resources/groups-overview.md) |
+|Groups | Azure AD, OneDrive, OneNote, Outlook, Planner | Office 365 groups for users to share conversations, files, notes, calendar, and plans. | [Office 365 groups overview](../concepts/office365-groups-concept-overview.md) |
 |Plans and tasks | Planner | Enables Office 365 groups to create plans, assign tasks, and track progress. | [Planner API overview](../api-reference/v1.0/resources/planner_overview.md) |
 | Shared sites and content  | SharePoint | Web-based platform for users and Office 365 groups to share and manage content (including lists, files, and notes). | [SharePoint API overview](../api-reference/v1.0/resources/sharepoint.md) | 
 |Teamwork (preview) |  Microsoft Teams | Chat-based workspace for teams to share files, notes, calendar, and plans. | [Microsoft Teams API overview](../api-reference/beta/resources/teams_api_overview.md) |
@@ -98,11 +98,11 @@ Reports
 | Security | Azure AD | Provides a unified gateway to security insights and actions across Microsoft solutions. |  |
 
 
-## Enterprise mobililty management
+## Device management
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-|Device and mobile app management | Intune | Enrolls and configures devices and manages your organization’s mobile applications. | [Intune device and mobbile app management overview](../concepts/intune-device-mobile-app-management-concept-overview.md) |
+|Mobile app and device management | Intune | Manages your organization’s mobile applications, and enrolls and configures devices. | [Intune device and mobbile app management overview](../concepts/intune-mobile-app-device-management-concept-overview.md) |
 
 
 ## Usage reports and audit logs
