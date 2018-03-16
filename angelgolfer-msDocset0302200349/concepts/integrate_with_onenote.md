@@ -49,7 +49,7 @@ To get started with OneNote APIs in Microsoft Graph, see the [OneNote reference 
 * [Branding guidelines](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-branding)
 * [Get OneNote content and structure](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content)
 * [Add images, videos, and files](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-images-files)
-* [Create absolute positioned elements](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos)
+* [Create absolute positioned elements](onenote-abs-pos.md)
 * [Extract data](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-extract-data)
 * [Use note tags](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags)
 

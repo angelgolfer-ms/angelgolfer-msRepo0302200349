@@ -18,7 +18,8 @@
 ## [Visual Studio Connected Services](concepts/office_365_connected_services.md)
 ## [Xamarin](concepts/xamarin.md)
 
-# Learn 
+# Learn
+
 # [Mail (Outlook)](concepts\outlook-mail-concept-overview.md)
 ## [Create and send messages](concepts\outlook-create-send-messages.md)
 ## [Organize messages](concepts\outlook-organize-messages.md)
@@ -28,6 +29,7 @@
 ## [Open the OneNote client](concepts/open_onenote_client.md)
 ## [Error codes](concepts/onenote_error_codes.md)
 ## [Best practices](concepts/onenote_best_practices.md)
+## [Create absolute positioned elements](concepts/onenote-abs-pos.md)
 # [Workbooks and charts (Excel)](concepts\excel-content-overview.md)
 ## [Manage sessions](concepts\manage-sessions-in-excel-with-microsoft-graph.md)
 ## [Display a chart image](concepts\display-a-chart-image-in-excel-with-microsoft-graph.md)
