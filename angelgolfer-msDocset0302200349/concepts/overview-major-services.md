@@ -86,7 +86,7 @@ Reports
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Users and identity management | Azure AD | Creates and manages directory resources such as users, groups, and applications. | [Azure AD directory overview](../concepts/azuread-directory-concept-overview.md)  |
+| Users and identity management | Azure AD | Creates and manages directory resources such as users, groups, and applications. | [Azure AD users and identity management overview](../concepts/azuread-users-identity-concept-overview.md)  |
 | Policies and permissions | Azure AD | Grants users, groups, and applications access to resources and data. | [Azure AD permissions and policies overview](../concepts/azuread-permissions-policies-concept-overview.md) |
 
 
