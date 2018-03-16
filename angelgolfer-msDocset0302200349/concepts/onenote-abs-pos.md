@@ -125,17 +125,13 @@ The OneNote API returns the following information in the response.
 
 To create or update OneNote pages, you'll need to request appropriate permissions. Choose the lowest level of permissions that your app needs to do its work.
 
-**Permissions for _POST pages_**
+### Permissions for _POST pages_ 
+[!INCLUDE [Create perms](includes/postPermission.txt)]
 
-|  Permission scope |
-|------|
-|  Notes.Create, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, Notes.ReadWrite.All |  
 
-**Permissions for _PATCH pages_**
+### Permissions for _PATCH pages_ 
 
-| Permission scope |
-|------|
-| Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, Notes.ReadWrite.All |  
+[!INCLUDE [Create perms](includes/patchPermission.txt)]
 
 For more information about permission scopes and how they work, see [OneNote permission scopes](../howto/onenote-auth.md).
 
