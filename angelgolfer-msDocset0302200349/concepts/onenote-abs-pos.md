@@ -84,7 +84,7 @@ The API renders the non-absolute positioned div in the default div. Note that th
  
 The OneNote API evaluates the input HTML and preserves all semantic content and any structural information that is supported by OneNote. The resulting page renders as shown in the following image (but without the visible borders for the div and image). 
 
-![Resulting page with absolute positioned div and image](images\abs-pos.png)
+![Resulting page with absolute positioned div and image](images/abs-pos.png)
 
 Notice the changes to the non-contributing, nested div from the input HTML. The API preserves the div's content but discards the `<div>` tags because the div doesn't define semantic information (such as `data-id`).
 
