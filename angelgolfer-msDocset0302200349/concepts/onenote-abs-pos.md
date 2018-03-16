@@ -116,8 +116,8 @@ The OneNote API returns the following information in the response.
 | Response data | Description |  
 |:------|:------|  
 | Success code | A 201 HTTP status code for a successful POST request, and a 204 HTTP status code for a successful PATCH request. |  
-| Errors or warnings | <p>You'll receive a warning in the **api.diagnostics** property of the response for any of the following conditions:</p><ul><li>The `style="position:absolute"` attribute is specified on an element, but the `body` element does not specify `data-absolute-enabled="true"`. All position settings are ignored.</li><li>The `style="position:absolute"` attribute is specified on an element that is not a direct child of the body element. If the element is a `div`, `img`, or `object`, make it a direct child of the body; otherwise the position settings will be ignored.</li><li>The `style="position:absolute"` attribute is specified on an element is not a `div`, `img`, and ``object` element.</li></ul> |  
-| X-CorrelationId header | A GUID that uniquely identifies the request. You can use this value along with the value of the Date header when working with Microsoft support to troubleshoot issues. |  
+| Errors | |  
+  
 
 
 <a name="permissions"></a>
@@ -141,9 +141,4 @@ For more information about permission scopes and how they work, see [OneNote per
 
 - [Create OneNote pages](onenote-create-page.md)
 - [Update OneNote page content](onenote-update-page.md)
-- [Integrate with OneNote](integrate_with_onenote.md)
-- [OneNote Developer Blog](http://go.microsoft.com/fwlink/?LinkID=390183)
-- [OneNote development questions on Stack Overflow](http://go.microsoft.com/fwlink/?LinkID=390182)
-- [OneNote GitHub repos](http://go.microsoft.com/fwlink/?LinkID=390178)  
-
-
+[!INCLUDE [additional resources](includes/additionalResources.txt)]
