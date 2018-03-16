@@ -32,7 +32,7 @@
 ## [Open the OneNote client](concepts/open_onenote_client.md)
 ## [Error codes](concepts/onenote_error_codes.md)
 ## [Best practices](concepts/onenote_best_practices.md)
-# [Policies and permissions (Azure AD)](concepts/azuread-permissions-policies-concept-overview.md)
+# [Permissions and policies (Azure AD)](concepts/azuread-permissions-policies-concept-overview.md)
 # [Workbooks and charts (Excel)](concepts\excel-content-overview.md)
 ## [Manage sessions](concepts\manage-sessions-in-excel-with-microsoft-graph.md)
 ## [Display a chart image](concepts\display-a-chart-image-in-excel-with-microsoft-graph.md)
