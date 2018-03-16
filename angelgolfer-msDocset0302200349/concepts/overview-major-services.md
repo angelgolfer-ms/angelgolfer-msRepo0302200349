@@ -86,23 +86,23 @@ Reports
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Users and identity management | Azure AD | Manages key directory resources such as users, groups, administrative units, applications, and devices. | [Azure Active Directory API overview](../api-reference/beta/resources/azure_ad_overview.md)  |
-| Invitation manager | Azure AD | Creates an invitation to an external user to join an organization. | [invitation resource type](../api-reference/v1.0/resources/invitation.md) |
-| Privileged identity management (preview) | Azure AD | Manages, controls, and monitors access within an organization.  | [Azure AD privileged identity management](../api-reference/beta/resources/privilegedidentitymanagement_root.md)  |
+| Users and identity management | Azure AD | Creates and manages directory resources such as users, groups, and applications. | [Azure AD directory overview](../concepts/azuread-directory-concept-overview.md)  |
+| Policies and permissions | Azure AD | Grants users, groups, and applications access to resources and data. | [Azure AD permissions and policies overview](../concepts/azuread-permissions-policies-concept-overview.md) |
 
 
 ## Security intelligence
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Identity risk detection | Azure AD | Get information about risk events in user accounts detected by adaptive machine learning. | [Azure AD identity protection](../api-reference/beta/resources/identityprotection_root.md)  |
+| Identity risk detection | Azure AD | Gets information about risk events in user accounts detected by adaptive machine learning. | [Azure AD identity protection](../api-reference/beta/resources/identityprotection_root.md)  |
+| Security | Azure AD | Provides a unified gateway to security insights and actions across Microsoft solutions. |  |
 
 
 ## Enterprise mobililty management
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-|Enterprise mobility management | Intune | Provides security tools for organizations and their employees to access company data irrespective of the data location (cloud, on-premises, or on device), device, or application type (store, web, or LOB apps). | [Intune API overview](../api-reference/v1.0/resources/intune_graph_overview.md) |
+|Device and mobile app management | Intune | Enrolls and configures devices and manages your organization’s mobile applications. | [Intune device and mobbile app management overview](../concepts/intune-device-mobile-app-management-concept-overview.md) |
 
 
 ## Usage reports and audit logs
