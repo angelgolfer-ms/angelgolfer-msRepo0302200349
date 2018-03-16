@@ -1,4 +1,4 @@
-# Azure AD directory overview
+# Azure AD users and identity management overview
 
 {1-2 sentences about the value of this feature/service to its target customers.} 
 

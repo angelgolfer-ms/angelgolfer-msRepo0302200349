@@ -1,4 +1,4 @@
-# Intune device and mobile app management overview
+# Intune mobile app and device management overview
 
 {1-2 sentences about the value of this feature/service to its target customers.} 
 

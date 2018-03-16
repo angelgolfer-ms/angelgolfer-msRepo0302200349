@@ -20,13 +20,13 @@
 ## [Xamarin](concepts/xamarin.md)
 
 # LEARN 
-# [Users and identity](concepts\azuread-directory-concept-overview.md)
+# [Users and identity](concepts\azuread-users-identity-concept-overview.md)
 # [Groups](concepts\office365-groups-concept-overview.md)
 # [Mail (Outlook)](concepts\outlook-mail-concept-overview.md)
 ## [Create and send messages](concepts\outlook-create-send-messages.md)
 ## [Organize messages](concepts\outlook-organize-messages.md)
 ## [Share message folders](concepts\outlook-share-messages-folders.md)
-# [Mobile app and devices (Intune)](concepts\intune-mobile-app-device-management-concept-overview.md)
+# [Mobile app and devices (Intune)](concepts\intune-mobile-app-device-concept-overview.md)
 # [Notes (OneNote)](concepts/integrate_with_onenote.md)
 ## [Input and output HTML](concepts/onenote_input_output_html.md)
 ## [Open the OneNote client](concepts/open_onenote_client.md)
