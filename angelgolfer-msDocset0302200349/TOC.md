@@ -966,7 +966,7 @@
 ##### [Create multi-value property](api-reference/beta/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md)
 ##### [Get multi-value property](api-reference/beta/api/multivaluelegacyextendedproperty_get.md)
 
-## [Cross-device experiences (Project Rome) (preview)](api-reference/beta/resources/project_rome_overview.md)
+## [Cross-device experiences (Project Rome)](api-reference/beta/resources/project_rome_overview.md)
 ### [List user devices](api-reference/beta/api/user_list_devices.md)
 ### [Send device command](api-reference/beta/api/send_device_command.md)
 ### [Get device command status](api-reference/beta/api/get_device_command_status.md)
@@ -977,7 +977,7 @@
 #### [Create or replace a history item](api-reference/beta/api/projectrome_put_historyitem.md)
 #### [Delete a history item](api-reference/beta/api/projectrome_delete_historyitem.md)
 
-## [Education (preview)](api-reference/beta/resources/education-overview.md)
+## [Education](api-reference/beta/resources/education-overview.md)
 ### [Schools](api-reference/beta/resources/educationschool.md)
 #### [List schools](api-reference/beta/api/educationroot_list_schools.md)
 #### [Create school](api-reference/beta/api/educationroot_post_schools.md)
@@ -3854,7 +3854,7 @@
 #### [Update item](api-reference/beta/api/listitem_update.md)
 #### [Delete item](api-reference/beta/api/listitem_delete.md)
 
-## [Teamwork (Microsoft Teams) (preview)](api-reference/beta/resources/teams_api_overview.md)
+## [Teamwork (Microsoft Teams)](api-reference/beta/resources/teams_api_overview.md)
 ### [Group (team)](api-reference/beta/resources/group.md)
 #### [Get group](api-reference/beta/api/group_get.md)
 #### [List groups](api-reference/beta/api/group_list.md)
@@ -3916,7 +3916,7 @@
 ##### [Create multi-value property](api-reference/beta/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md)
 ##### [Get multi-value property](api-reference/beta/api/multivaluelegacyextendedproperty_get.md)
 
-## [To-do tasks (Outlook) (preview)](api-reference/beta/resources/outlooktask.md)
+## [To-do tasks (Outlook)](api-reference/beta/resources/outlooktask.md)
 ### [Outlook task](api-reference/beta/resources/outlooktask.md)
 #### [List](api-reference/beta/api/outlookuser_list_tasks.md)
 #### [Create](api-reference/beta/api/outlookuser_post_tasks.md)
