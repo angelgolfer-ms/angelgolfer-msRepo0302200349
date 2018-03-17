@@ -468,7 +468,7 @@
 ### [Person](api-reference/v1.0/resources/person.md)
 #### [List people](api-reference/v1.0/api/user_list_people.md)
 #### [Get person](api-reference/v1.0/api/person_get.md)
-## [Personal contact](api-reference/v1.0/resources/contact.md)
+## [Personal contacts](api-reference/v1.0/resources/contact.md)
 ### [Contact](api-reference/v1.0/resources/contact.md)
 #### [List contacts](api-reference/v1.0/api/user_list_contacts.md)
 #### [Create contact](api-reference/v1.0/api/user_post_contacts.md)
@@ -3680,7 +3680,7 @@
 #### [Get person](api-reference/beta/api/person_get.md)
 ### [Mention](api-reference/beta/resources/mention.md)
 
-## [Personal contact](api-reference/beta/resources/contact.md)
+## [Personal contacts](api-reference/beta/resources/contact.md)
 ### [Contact](api-reference/beta/resources/contact.md)
 #### [List contacts](api-reference/beta/api/user_list_contacts.md)
 #### [Create contact](api-reference/beta/api/user_post_contacts.md)
