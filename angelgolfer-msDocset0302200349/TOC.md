@@ -1,9 +1,9 @@
 # [Overview](concepts/overview.md)
+## [Services in Microsoft Graph](concepts/overview-major-services.md)
 ## Users you can reach
 ### [National cloud deployments](concepts/deployments.md)
 ### [Hybrid deployments (preview)](concepts/hybrid_rest_support.md)
 ## [Versioning and support](concepts/versioning_and_support.md)
-# [Services in Microsoft Graph](concepts/overview-major-services.md)
 # [Quick starts](concepts/get-started.md)
 ## [Android](concepts/android.md)
 ## [Angular](concepts/angular.md)
