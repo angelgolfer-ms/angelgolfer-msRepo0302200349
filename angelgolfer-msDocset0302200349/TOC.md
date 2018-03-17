@@ -681,7 +681,7 @@
 #### [Add named item](api-reference/v1.0/api/nameditem_add.md)
 #### [List range](api-reference/v1.0/api/nameditem_range.md)
 
------------------------------------
+# -----------------------------------
 ## [Open extensions](api-reference/v1.0/resources/opentypeextension.md)
 ### [Create open extension](api-reference/v1.0/api/opentypeextension_post_opentypeextension.md)
 ### [Get open extension](api-reference/v1.0/api/opentypeextension_get.md)
@@ -699,7 +699,7 @@
 #### [Create subscription](api-reference/v1.0/api/subscription_post_subscriptions.md)
 #### [Update subscription](api-reference/v1.0/api/subscription_update.md)
 #### [Delete subscription](api-reference/v1.0/api/subscription_delete.md)
------------------------------------
+# -----------------------------------
 
 # [Beta reference](api-reference/beta/beta-overview.md)
 ## [Users](api-reference/beta/resources/users.md)
