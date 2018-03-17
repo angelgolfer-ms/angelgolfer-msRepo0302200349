@@ -116,7 +116,7 @@ Reports
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-|Schools, enrolments, and assignments (preview) | Azure AD, Education | Empowers educators to unlock creativity, promote teamwork, and provide a simple and safe experience in a single, affordable solution built for education. | [Education API overview](../api-reference/beta/resources/education-overview.md)
+| Education (preview) | Azure AD, Education | Supports schools, enrolments, and assignments, empowering educators to unlock creativity, promote teamwork, and provide a simple and safe experience for education. | [Education API overview](../api-reference/beta/resources/education-overview.md)
 
 
 ## Social intelligence and analytics
@@ -131,7 +131,7 @@ Reports
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Project Rome (preview) | Windows | Enables app experiences that transcend a single device, and instead move with the user from device to device regardless of its type and platform. | [Project Rome API overview](../api-reference/beta/resources/project_rome_overview.md) |
+| Cross-device experiences (preview) | Project Rome, Windows | Enables app experiences that transcend a single device, and instead move with the user from device to device regardless of its type and platform. | [Project Rome API overview](../api-reference/beta/resources/project_rome_overview.md) |
 
 
 ## Next steps
