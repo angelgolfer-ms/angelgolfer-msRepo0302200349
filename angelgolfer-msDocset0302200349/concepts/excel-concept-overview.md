@@ -31,8 +31,8 @@ You can access a set of Excel objects (such as Table, Range, or Chart) by using 
 
 ## Topics in this section
 
-* [Manage sessions in Excel with Microsoft Graph](manage-sessions-in-excel-with-microsoft-graph.md) 
-* [Write to an Excel workbook using Microsoft Graph](write-to-excel-workbook-with-microsoft-graph.md)
-* [Use workbook functions in Excel with Microsoft Graph](use-functions-in-excel-with-microsoft-graph.md)
-* [Update a range’s format in Excel with Microsoft Graph](update-range-format-in-excel-with-microsoft-graph.md)
-* [Display a chart image in Excel with Microsoft Graph](display-a-chart-image-in-excel-with-microsoft-graph.md)
+* [Manage sessions in Excel with Microsoft Graph](excel-manage-sessions.md) 
+* [Write to an Excel workbook using Microsoft Graph](excel-write-to-workbook.md)
+* [Use workbook functions in Excel with Microsoft Graph](excel-use-functions.md)
+* [Update a range’s format in Excel with Microsoft Graph](excel-update-range-format.md)
+* [Display a chart image in Excel with Microsoft Graph](excel-display-chart-image.md)
