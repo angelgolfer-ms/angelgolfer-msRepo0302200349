@@ -22,18 +22,31 @@
 # LEARN 
 # [Users and identity](concepts\azuread-users-identity-concept-overview.md)
 # [Groups](concepts\office365-groups-concept-overview.md)
+# [Calendar (Outlook)](concepts\outlook-calendar-concept-overview.md)
+## [Find meeting times](concepts\findmeetingtimes_example.md)
+# [Cross devices](concepts\project-rome-concept-overview.md)
+# [Education](concepts\education-concept-overview.md)
+# [Files (OneDrive)](concepts\onedrive-concept-overview.md)
 # [Mail (Outlook)](concepts\outlook-mail-concept-overview.md)
 ## [Create and send messages](concepts\outlook-create-send-messages.md)
 ## [Organize messages](concepts\outlook-organize-messages.md)
 ## [Share message folders](concepts\outlook-share-messages-folders.md)
-# [Mobile app and devices (Intune)](concepts\intune-mobile-app-device-concept-overview.md)
+# [Mobile app and devices (Intune)](concepts\intune-concept-overview.md)
 # [Notes (OneNote)](concepts/integrate_with_onenote.md)
 ## [Input and output HTML](concepts/onenote_input_output_html.md)
 ## [Open the OneNote client](concepts/open_onenote_client.md)
 ## [Error codes](concepts/onenote_error_codes.md)
 ## [Best practices](concepts/onenote_best_practices.md)
 # [Permissions and policies (Azure AD)](concepts/azuread-permissions-policies-concept-overview.md)
-# [Workbooks and charts (Excel)](concepts\excel-content-overview.md)
+# [Personal contacts](concepts/outlook-contacts-concept-overview.md)
+# [Plans and tasks (Planner)](concepts\planner-concept-overview.md)
+# [Security intelligence](concepts\azuread-security-intel-concept-overview.md)
+# [Shared sites (SharePoint)](sharepoint-concept-overview.md)
+# [Social intelligence](concepts/social-intel-concept-overview.md)
+## [Get relevant people](concepts/people_example.md)
+# [Teamwork (Teams) (preview)](concepts\teams-concept-overview.md)
+# [To-do tasks (Outlook)(preview)](concepts/outlook-tasks-concept-overview.md)
+# [Workbooks and charts (Excel)](concepts\excel-concept-overview.md)
 ## [Manage sessions](concepts\manage-sessions-in-excel-with-microsoft-graph.md)
 ## [Display a chart image](concepts\display-a-chart-image-in-excel-with-microsoft-graph.md)
 ## [Use workbook functions](concepts\use-functions-in-excel-with-microsoft-graph.md)
@@ -48,6 +61,7 @@
 ## [Permissions](concepts/permissions_reference.md)
 ## [Manage app access (CSPs)](concepts/auth_cloudsolutionprovider.md)
 # [Use the API](concepts\use_the_api.md)
+## UTILITIES
 ## [Paging](concepts/paging.md)
 ## [Use query parameters](concepts/query_parameters.md)
 ## [Batch requests](concepts/json_batching.md)
@@ -681,7 +695,7 @@
 #### [Add named item](api-reference/v1.0/api/nameditem_add.md)
 #### [List range](api-reference/v1.0/api/nameditem_range.md)
 
-## ----------------------
+## UTILITIES
 ## [Open extensions](api-reference/v1.0/resources/opentypeextension.md)
 ### [Create open extension](api-reference/v1.0/api/opentypeextension_post_opentypeextension.md)
 ### [Get open extension](api-reference/v1.0/api/opentypeextension_get.md)
@@ -699,7 +713,7 @@
 #### [Create subscription](api-reference/v1.0/api/subscription_post_subscriptions.md)
 #### [Update subscription](api-reference/v1.0/api/subscription_update.md)
 #### [Delete subscription](api-reference/v1.0/api/subscription_delete.md)
-## ----------------------
+
 
 # [Beta reference](api-reference/beta/beta-overview.md)
 ## [Users](api-reference/beta/resources/users.md)
@@ -4018,7 +4032,7 @@
 #### [Add named item](api-reference/beta/api/nameditem_add.md)
 #### [List range](api-reference/beta/api/nameditem_range.md)
 
-## ----------------------
+## UTILITIES
 ## [Open Extensions](api-reference/beta/resources/opentypeextension.md)
 ### [Create open extension](api-reference/beta/api/opentypeextension_post_opentypeextension.md)
 ### [Get open extension](api-reference/beta/api/opentypeextension_get.md)
