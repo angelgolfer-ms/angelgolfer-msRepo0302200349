@@ -1,34 +1,13 @@
-ms.TocTitle: Extract data
-Title: Extract data from captures 
-Description: Use the OneNote API to augment and transform content for a business card, online recipe, or online product listing.
-ms.ContentId: 901068e3-1d4d-4233-856b-5a2a71cc58c2
-ms.topic: article (how-tos)
-ms.date: January 19, 2016
-
-[!INCLUDE [Add the O365API repo styles](../includes/controls/addo365apistyles.xml)]
-[!INCLUDE [Add the ONAPI repo styles](../includes/controls/addonapistyles.xml)]
-
-<style>#simpletable {margin:-5px 0px 0px 0px; border:none;} #simplecell {border:none; padding:15px 20px; background-color:white;} .rightalign {text-align:right; padding: 0px 20px 0px 0px;}</style>
-
 # Extract data from captures
 
 *__Applies to:__ Consumer notebooks on OneDrive | Enterprise notebooks on Office 365*
 
 Use the OneNote API to extract business card data from an image, or recipe and product data from a URL.
 
-<p id="top-padding">**In this article**</p>
-<p id="indent">[Extraction attributes](#attributes)</p>
-<p id="indent">[Business card extractions](#biz-card)</p>
-<p id="indent">[Recipe extractions](#recipe)</p>
-<p id="indent">[Product listing extractions](#product)</p>
-<p id="indent">[Unknown content type extractions](#unknown)</p>
-<p id="indent">[Response information](#request-response-info)</p>
-<p id="indent">[Permissions](#permissions)</p>
-
 <a name="attributes"></a>
 ## Extraction attributes
 
-To extract and transform data, simply include a div that specifies the source content, extraction method, and fallback behavior in your [create-page](../howto/onenote-create-page.md) or [update-page](../howto/onenote-update-page.md) request. The API renders extracted data on the page in an easy-to-read format. 
+To extract and transform data, simply include a div that specifies the source content, extraction method, and fallback behavior in your [create-page](onenote_create_page.md) or [update-page](onenote_update_page.md) request. The API renders extracted data on the page in an easy-to-read format. 
 
 ```
 <div
@@ -44,7 +23,7 @@ The content source. This can be an image of a business card or an absolute URL f
 
 For best results when specifying a URL, use the canonical URL defined in the HTML of the source webpage, if one is defined. For example, a canonical URL might be defined in the source webpage like this:
 
-<p id="indent">`<link rel="canonical" href="www.domainname.com/page/123/size12/type987" />`</p>
+`<link rel="canonical" href="www.domainname.com/page/123/size12/type987" />` 
 
 
 **data-render-method**
@@ -74,12 +53,16 @@ The fallback behavior if the extraction fails. Defaults to **render** if omitted
 
 The OneNote API tries to find and render the following contact information based on an image of a person's or company's business card.
 
-<table role="presentation" id="simpletable">
-<tr>
-<td id="simplecell">Name<br /><br />Title<br /><br />Organization<br /><br />Phone and fax numbers<br /><br />Mailing and physical addresses<br /><br />Email addresses<br /><br />Websites<br /></td>
-<td id="simplecell" class="rightalign">![An example business card extraction.](images\onenote\biz-card-extraction.png)</td>
-</tr>
-</table>
+
+- Name
+- Title
+- Organization
+- Phone and fax numbers
+- Mailing and physical addresses
+- Email addresses
+- Websites
+   
+![An example business card extraction.](images/biz-card-extraction.png)
 
 A vCard (.VCF file) with the extracted contact information is also embedded in the page. The vCard is a convenient way to get the contact information when retrieving page HTML content.
 
@@ -98,7 +81,7 @@ Specify the `extract.businesscard` method and the `none` fallback. Also send an 
 <img src="name:scanned-card-image" />
 ```
 
-<br />
+
 **Extract business card information, and render the business card image only if the extraction fails**
 
 Specify the `extract.businesscard` method and use the default `render` fallback. If the API is unable to extract any content, it renders the business card image instead.
@@ -118,13 +101,14 @@ For business card extractions, the image is sent as a named part in a multipart 
 
 The OneNote API tries to find and render the following information based on a recipe's URL.
 
+- Hero image
+- Rating
+- Ingredients
+- Instructions
+- Prep, cook, and total times
+- Servings
 
-<table role="presentation" id="simpletable">
-<tr>
-<td id="simplecell">Hero image<br /><br />Rating<br /><br />Ingredients<br /><br />Instructions<br /><br />Prep, cook, and total times<br /><br />Servings</td>
-<td id="simplecell" class="rightalign">![An example recipe extraction.](images\onenote\recipe-extraction.png)</td>
-</tr>
-</table>
+ ![An example recipe extraction](images/recipe-extraction.png)
 
 The API is optimized for recipes from many popular sites such as *Allrecipes.com*, *FoodNetwork.com*, and *SeriousEats.com*.
 
@@ -145,7 +129,7 @@ This scenario potentially provides the most information because the webpage may 
 <img data-render-src="http://allrecipes.com/recipe/guacamole/" />
 ```
  
-<br />
+
 **Extract recipe information, and render a snapshot of the recipe webpage only if the extraction fails**
 
 Specify the `extract.recipe` method and use the default render fallback. If the API is unable to extract any content, it renders a snapshot of the recipe webpage instead.
@@ -157,7 +141,7 @@ Specify the `extract.recipe` method and use the default render fallback. If the 
 </div>
 ```
 
-<br />
+
 **Extract recipe information, and also render a link to the recipe**
 
 Specify the `extract.recipe` method and the `none` fallback. Also send an `a` element with the `src` attribute set to the recipe URL (or you can send any other information you want to add to the page). If the API is unable to extract any content, only the recipe link is rendered.
@@ -175,12 +159,14 @@ Specify the `extract.recipe` method and the `none` fallback. Also send an `a` el
 <a name="product"></a>
 ## Product listing extractions
 
-<table role="presentation" id="simpletable">
-<tr>
-<td id="simplecell">Title<br /><br />Rating<br /><br />Primary image<br /><br />Description<br /><br />Features<br /><br />Specifications</td>
-<td id="simplecell" class="rightalign">![An example product listing extraction.](images\onenote\product-extraction.png)</td>
-</tr>
-</table>
+- Title
+- Rating
+- Primary image
+- Description
+- Features
+- Specifications</td>
+
+![An example product listing extraction.](images/product-extraction.png)
 
 The API is optimized for products from many popular sites such as *Amazon.com* and *HomeDepot.com*.
 
@@ -201,7 +187,7 @@ This scenario potentially provides the most information because the webpage may 
 <img data-render-src="http://www.amazon.com/Microsoft-Band-Small/dp/B00P2T2WVO" />
 ```
 
-<br />
+
 **Extract product information, and render a snapshot of the product webpage only if the extraction fails**
 
 Specify the `extract.product` method and use the default render fallback. If the API is unable to extract any content, it renders a snapshot of the product webpage instead.
@@ -213,7 +199,7 @@ Specify the `extract.product` method and use the default render fallback. If the
 </div>
 ```
  
-<br />
+
 **Extract product information, and also render a link to the product**
 
 Specify the `extract.product` method and the `none` fallback. Also send an `a` element with the `src` attribute set to the product URL (or you can send any other information you want to add to the page). If the API is unable to extract any content, only the page link is rendered.
@@ -233,7 +219,8 @@ Specify the `extract.product` method and the `none` fallback. Also send an `a` e
 
 If you don't know the content type (business card, recipe, or product) that you're sending, you can use the unqualified `extract` method and let the OneNote API automatically detect the type. You might want to do this if your app sends different capture types.
 
->If you do know the content type that you're sending, you should use the `extract.businesscard`, `extract.recipe`, or `extract.product` method. In some cases, this can help to optimize the extraction results.
+> [!NOTE]
+> If you do know the content type that you're sending, you should use the `extract.businesscard`, `extract.recipe`, or `extract.product` method. In some cases, this can help to optimize the extraction results.
  
 ### Common scenarios for unknown extractions
 
@@ -255,8 +242,7 @@ Specify the `extract` method so the API automatically detects the content type, 
 | Response data | Description |  
 |------|------|  
 | Success code | A 201 HTTP status code for a successful POST request, and a 204 HTTP status code for a successful PATCH request. |  
-| Errors or warnings | <p>If the extraction fails, the API processes as much of the request as possible and returns a 20136 warning code in the **@api.diagnostics** property in the response body. The extraction will fail if:<br /> - The required `data-render-src` or `data-render-method` attributes are missing.<br /> - The `data-render-src`, `data-render-method`, or `data-fallback-method` values are empty or invalid.</p><p>Sometimes the API can extract only part of the target content even when it is available. In this case, the service processes as much of the request as possible but does not return a warning.</p> |  
-| X-CorrelationId header | A GUID that uniquely identifies the request. You can use this value along with the value of the Date header when working with Microsoft support to troubleshoot issues. |  
+| Errors| Read [Error codes for OneNote APIs in Microsoft Graph](onenote_error_codes.md) to learn about OneNote errors that Microsoft Graph can return. |  
 
 
 <a name="permissions"></a>
@@ -266,13 +252,13 @@ To create or update OneNote pages, you'll need to request appropriate permission
 
 **Permissions for _POST pages_**
 
-[!INCLUDE [Create perms](../includes/onenote/create-perms.txt)] 
+[!INCLUDE [Create perms](includes/create-perms.txt)] 
 
 **Permissions for _PATCH pages_**
 
-[!INCLUDE [Update perms](../includes/onenote/update-perms.txt)]
+[!INCLUDE [Update perms](includes/update-perms.txt)]
 
-For more information about permission scopes and how they work, see [OneNote permission scopes](../howto/onenote-auth.md).
+For more information about permission scopes and how they work, see [Microsoft Graph permissions reference](permissions_reference.md).
 
 
 <a name="see-also"></a>
@@ -281,10 +267,6 @@ For more information about permission scopes and how they work, see [OneNote per
 - [Create OneNote pages](../howto/onenote-create-page.md)
 - [Update OneNote page content](../howto/onenote-update-page.md)
 - [Add images and files](../howto/onenote-images-files.md)
-- [OneNote development](../howto/onenote-landing.md)
-- [OneNote Dev Center](http://dev.onenote.com/)
-- [OneNote Developer Blog](http://go.microsoft.com/fwlink/?LinkID=390183)
-- [OneNote development questions on Stack Overflow](http://go.microsoft.com/fwlink/?LinkID=390182)
-- [OneNote GitHub repos](http://go.microsoft.com/fwlink/?LinkID=390178)  
+[!INCLUDE [additional resources](includes/additionalResources.txt)] 
 
 
