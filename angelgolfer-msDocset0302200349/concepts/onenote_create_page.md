@@ -1,13 +1,3 @@
-ms.TocTitle: Create pages
-Title: Create OneNote pages
-Description: Create OneNote pages in any section, and include images, files, and other content.
-ms.ContentId: 0de322cc-570f-4afb-a313-b1d9c3d916f2
-ms.topic: article (how-tos)
-ms.date: May 17, 2016
-
-[!INCLUDE [Add the O365API repo styles](../includes/controls/addo365apistyles.xml)]
-[!INCLUDE [Add the ONAPI repo styles](../includes/controls/addonapistyles.xml)]
-
 # Create OneNote pages
 
 *__Applies to:__ Consumer notebooks on OneDrive | Enterprise notebooks on Office 365*
@@ -19,14 +9,8 @@ To create a OneNote page, you send a POST request to a *pages* endpoint. For exa
 Send the HTML that defines the page in the message body. If the request is successful, the OneNote API returns a 201 HTTP status code.
 
 
-<p id="top-padding">**In this article**</p>
-<p id="indent">[Construct the request URI](#request-uri)</p>
-<p id="indent">[Construct the message body](#message-body)</p>
-<p id="indent">[Example request](#example)</p>
-<p id="indent">[Request and response information](#request-response-info)</p>
-<p id="indent">[Permissions](#permissions)</p>
-
->To learn about the POST requests you can send to create sections, section groups, and notebooks, see our [interactive REST reference](http://dev.onenote.com/docs).
+> [!NOTE]
+> To learn about the POST requests you can send to create sections, section groups, and notebooks, see our [interactive REST reference](http://dev.onenote.com/docs).
 
 
 <a name="request-uri"></a>
@@ -34,29 +18,26 @@ Send the HTML that defines the page in the message body. If the request is succe
 
 To construct the request URI, start with the service root URL:
 
-[!INCLUDE [service root url](../includes/onenote/service-root-url.xml)]
+`https://graph.microsoft.com/v1.0/me/onenote`
 
 Then append the *pages* endpoint:
 
-<p id="outdent1">**Create a page in any section (specified by ID)**</p>
-<p id="indent1">`../sections/{id}/pages`</p>
+**Create a page in any section (specified by ID)** 
+`.../sections/{section-id}/pages` 
 
-If you're creating pages in the user's personal notebook in OneDrive or OneDrive for Business, the OneNote API also provides endpoints you can use to create pages in the default notebook:
+If you're creating pages in the user's personal notebook, Microsoft Graph also provides endpoints you can use to create pages in the default notebook:
 
-<p id="outdent1">**Create a page in the default section of the default notebook**</p>
-<p id="indent1">`../me/notes/pages`</p>
+**Create a page in the default section of the default notebook** 
 
-<p id="outdent1">**Create a page in a section (specified by name) in the default notebook** (*[see rules](#post-pages-section-name)*)</p>
-<p id="indent1">`../me/notes/pages?sectionName=Some%20section%20name`</p>
+`../pages` 
 
 
-<br />
+
 Your full request URI will look like one of these examples:
-<p id="indent">`https://www.onenote.com/api/v1.0/me/notes/sections/{id}/pages?sectionName=Homework`</p>
-<p id="indent">`https://www.onenote.com/api/v1.0/myorganization/sitecollections/{id}/sites/{id}/notes/sections/{id}/pages`</p>
-<p id="indent">`https://www.onenote.com/api/v1.0/myorganization/groups/{id}/notes/sections/{id}/pages`</p>
+* `https://graph.microsoft.com/v1.0/me/onenote/sections/{id}/pages?sectionName=Homework`</p>
+* `https://www.onenote.com/api/v1.0/myorganization/groups/{id}/notes/sections/{id}/pages`</p>
 
-[!INCLUDE [service root url note](../includes/onenote/service-root-note.xml)]
+Learn more about the [service root URL](#root-url).
 
 <a name="post-pages-section-name"></a>
 ### Using the *sectionName* URL parameter
@@ -133,14 +114,14 @@ Not all elements, attributes, and properties are supported (in HTML4, XHTML, CSS
 
 The following list shows the basic element types that the OneNote API supports:
 
-<p id="indent">`<head>` and `<body>`</p>
-<p id="indent">`<title>` and `<meta>` that set the page title and creation date</p>
-<p id="indent">`<h1>` through `<h6>` for section headings</p>
-<p id="indent">`<p>` for paragraphs</p>
-<p id="indent">`<ul>`, `<ol>`, and `<li>` for lists and list items</p>
-<p id="indent">`<table>`, `<tr>` and `<td>`, including nested tables</p>
-<p id="indent">`<pre>` for preformatted text (preserves white space and line breaks)</p>
-<p id="indent">`<b>` and `<i>` for bold and italic character styles</p>
+- `<head>` and `<body>`</p>
+- `<title>` and `<meta>` that set the page title and creation date</p>
+- `<h1>` through `<h6>` for section headings</p>
+- `<p>` for paragraphs</p>
+- `<ul>`, `<ol>`, and `<li>` for lists and list items</p>
+- `<table>`, `<tr>` and `<td>`, including nested tables</p>
+- `<pre>` for preformatted text (preserves white space and line breaks)</p>
+- `<b>` and `<i>` for bold and italic character styles</p>
 
 The OneNote API preserves the semantic content and basic structure of the input HTML when it creates pages, but it converts the input HTML to use the supported set of HTML and CSS. Features that don't exist in OneNote have nothing to be translated to, so they might not be recognized in the source HTML. 
 
@@ -221,7 +202,7 @@ See [requirements and limitations for input HTML](#input-html-rules) and [size l
 <a name="root-url"></a>
 ### Constructing the OneNote service root URL
 
-[!INCLUDE [service root url section](../includes/onenote/service-root-section.xml)]
+The OneNote service root URL uses the following format for all calls to the OneNote API. `https://graph.microsoft.com/{version}/me/onenote/`  The `version` segment in the URL represents the version of Microsoft Graph that you want to use. Use `v1.0` for stable production code. Use `beta` to try out a feature that's in development. Features and functionality in beta may change, so you shouldn't use it in your production code. Use `me` for OneNote content that the current user can access (owned and shared). Use `users/{id}` for OneNote content that the specified user (in the URL) has shared with the current user. Use the [Microsoft Graph](https://graph.microsoft.com/v1.0/users) to get user IDs. 
 
 
 <a name="permissions"></a>
@@ -229,9 +210,12 @@ See [requirements and limitations for input HTML](#input-html-rules) and [size l
 
 To create OneNote pages, you'll need to request appropriate permissions. Choose the lowest level of permissions that your app needs to do its work.
 
-[!INCLUDE [Create perms](../includes/onenote/create-perms.txt)] 
+Choose from: 
+- Notes.Create
+- Notes.ReadWrite
+- Notes.ReadWrite.All
 
-For more information about permission scopes and how they work, see [OneNote permission scopes](../howto/onenote-auth.md).
+For more information about permission scopes and how they work, see [Microsoft Graph permissions reference](permissions_reference.md).
 
 <a name="see-also"></a>
 ## Additional resources
@@ -240,10 +224,5 @@ For more information about permission scopes and how they work, see [OneNote per
 - [Create absolute positioned elements](onenote-abs-pos.md)  
 - [Extract data](../howto/onenote-extract-data.md)
 - [Use note tags](../howto/onenote-note-tags.md)
-- [OneNote development](../howto/onenote-landing.md)
-- [OneNote Dev Center](http://dev.onenote.com/)
-- [OneNote Developer Blog](http://go.microsoft.com/fwlink/?LinkID=390183)
-- [OneNote development questions on Stack Overflow](http://go.microsoft.com/fwlink/?LinkID=390182) 
-- [OneNote GitHub repos](http://go.microsoft.com/fwlink/?LinkID=390178)
-
+[!INCLUDE [additional resources](includes/additionalResources.txt)]
 

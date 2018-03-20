@@ -88,7 +88,7 @@ The OneNote API evaluates the input HTML and preserves all semantic content and 
 
 Notice the changes to the non-contributing, nested div from the input HTML. The API preserves the div's content but discards the `<div>` tags because the div doesn't define semantic information (such as `data-id`).
 
-For more information about how the OneNote API handles input and output HTML, see [Input and output HTML for OneNote pages](onenote-input-output-html.md).
+For more information about how the OneNote API handles input and output HTML, see [Input and output HTML for OneNote pages](onenote_input_output_html.md).
 
 <a name="style-attributes"></a>
 ### Supported CSS style attributes
@@ -116,7 +116,7 @@ The OneNote API returns the following information in the response.
 | Response data | Description |  
 |:------|:------|  
 | Success code | A 201 HTTP status code for a successful POST request, and a 204 HTTP status code for a successful PATCH request. |  
-| Errors | |  
+| Errors | Read [Error codes for OneNote APIs in Microsoft Graph](onenote_error_codes.md) to learn about OneNote errors that Microsoft Graph can return. |  
   
 
 
