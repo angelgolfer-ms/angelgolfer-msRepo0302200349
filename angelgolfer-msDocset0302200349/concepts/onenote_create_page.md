@@ -6,7 +6,7 @@ To create a OneNote page, you send a POST request to a *pages* endpoint. For exa
 
 <p id="indent">`POST ../notes/sections/{id}/pages`</p>
 
-Send the HTML that defines the page in the message body. If the request is successful, the OneNote API returns a 201 HTTP status code.
+Send the HTML that defines the page in the message body. If the request is successful, Microsoft Graph returns a 201 HTTP status code.
 
 
 > [!NOTE]
@@ -35,7 +35,7 @@ If you're creating pages in the user's personal notebook, Microsoft Graph also p
 
 Your full request URI will look like one of these examples:
 * `https://graph.microsoft.com/v1.0/me/onenote/sections/{id}/pages?sectionName=Homework`</p>
-* `https://www.onenote.com/api/v1.0/myorganization/groups/{id}/notes/sections/{id}/pages`</p>
+* `https://graph.microsoft.com/v1.0/me/onenote/sections/{id}/pages`</p>
 
 Learn more about the [service root URL](#root-url).
 
@@ -60,14 +60,15 @@ Because sections are created if they don't exist, it's safe to use this call wit
 <a name="message-body"></a>
 ## Construct the message body
 
-The HTML that defines page content is called *input HTML*. Input HTML supports a [subset of standard HTML and CSS](#supported-html), with the addition of custom attributes. (Custom attributes, like **data-id** and **data-render-src**, are described in [Input and output HTML](..\howto\onenote-input-output-html.md).) 
+The HTML that defines page content is called *input HTML*. Input HTML supports a [subset of standard HTML and CSS](#supported-html), with the addition of custom attributes. (Custom attributes, like **data-id** and **data-render-src**, are described in [Input and output HTML](onenote_input_output_html.md).) 
 
 Send the input HTML in the message body of the POST request. You can send the input HTML directly in the message body using the  `application/xhtml+xml` or `text/html` content type, or you can send it in the "Presentation" part of a multipart request. 
 
 The following example sends the input HTML directly in the message body.
 
 ```
-POST https://www.onenote.com/api/v1.0/me/notes/pages
+POST https://graph.microsoft.com/v1.0/me/onenote/pages
+Authorization: Bearer {token}
 Authorization: Bearer {token}
 Content-Type: application/xhtml+xml
 
@@ -100,19 +101,19 @@ When sending input HTML, be aware of these general requirements and limitations:
 
 - HTML forms are removed in their entirety.  
 
-- The OneNote API supports a [subset of HTML elements](#supported-html). 
+- Microsoft Graph supports a [subset of HTML elements](#supported-html). 
 
-- The OneNote API supports a subset of common HTML attributes and a set of custom attributes, such as the **data-id** attribute used for updating pages. See [Input and output HTML](..\howto\onenote-input-output-html.md) for supported attributes.
+- Microsoft Graph supports a subset of common HTML attributes and a set of custom attributes, such as the **data-id** attribute used for updating pages. See [Input and output HTML](onenote_input_output_html.md) for supported attributes.
 
 
 <a name="supported-html"></a>
 ### Supported HTML and CSS for OneNote pages
 
-Not all elements, attributes, and properties are supported (in HTML4, XHTML, CSS, HTML5, etc.). Instead, the OneNote API accepts a limited set of HTML that better fits how people use OneNote. For more information, see [HTML tag support for pages](http://dev.onenote.com/docs#/introduction/html-tag-support-for-pages). If a tag's not listed there, it'll probably be ignored.
+Not all elements, attributes, and properties are supported (in HTML4, XHTML, CSS, HTML5, etc.). Instead, Microsoft Graph accepts a limited set of HTML that better fits how people use OneNote. For more information, see [HTML tag support for pages](http://dev.onenote.com/docs#/introduction/html-tag-support-for-pages). If a tag's not listed there, it'll probably be ignored.
 
-<!--The OneNote API only accepts UTF-8 data. Be sure that all requests are encoded that way, and your content-type headers indicate that as well. xx our examples don't show this-->
+<!--Microsoft Graph only accepts UTF-8 data. Be sure that all requests are encoded that way, and your content-type headers indicate that as well. xx our examples don't show this-->
 
-The following list shows the basic element types that the OneNote API supports:
+The following list shows the basic element types that Microsoft Graph supports:
 
 - `<head>` and `<body>`</p>
 - `<title>` and `<meta>` that set the page title and creation date</p>
@@ -123,17 +124,17 @@ The following list shows the basic element types that the OneNote API supports:
 - `<pre>` for preformatted text (preserves white space and line breaks)</p>
 - `<b>` and `<i>` for bold and italic character styles</p>
 
-The OneNote API preserves the semantic content and basic structure of the input HTML when it creates pages, but it converts the input HTML to use the supported set of HTML and CSS. Features that don't exist in OneNote have nothing to be translated to, so they might not be recognized in the source HTML. 
+Microsoft Graph preserves the semantic content and basic structure of the input HTML when it creates pages, but it converts the input HTML to use the supported set of HTML and CSS. Features that don't exist in OneNote have nothing to be translated to, so they might not be recognized in the source HTML. 
 
 
 <a name="example"></a>
 ## Example request
 
 This example multipart request creates a page that contains images and an embedded file. The required **Presentation** part contains the input HTML that defines the page. The **imageBlock1** part contains the binary image data 
- and **fileBlock1** contains the binary file data. Data parts can also contain HTML, in which case the OneNote API [renders the HTML as an image](../howto/onenote-images-files.md#image-img-binary-data-render-src) on the OneNote page. 
+ and **fileBlock1** contains the binary file data. Data parts can also contain HTML, in which case Microsoft Graph [renders the HTML as an image](../howto/onenote-images-files.md#image-img-binary-data-render-src) on the OneNote page. 
 
 ```
-POST https://www.onenote.com/api/v1.0/me/notes/pages
+POST https://graph.microsoft.com/v1.0/me/onenote/pages
 Authorization: Bearer {token}
 Content-Type: multipart/form-data; boundary=MyPartBoundary198374
 
@@ -172,12 +173,12 @@ Content-Type:application/pdf
 --MyPartBoundary198374--
 ```
 
-For more examples that show how to create pages that contain images and other files, see [Add images and files](..\howto\onenote-images-files.md), our [tutorials](../howto/onenote-tutorial.md), and our [samples](https://github.com/onenotedev). Also, learn how to [create absolute positioned elements](onenote-abs-pos.md), [use note tags](../howto/onenote-note-tags.md), and [extract data](../howto/onenote-extract-data.md) for business card captures and online recipe and product listings.
+For more examples that show how to create pages that contain images and other files, see [Add images and files](onenote_images_files.md), our [tutorials](../howto/onenote-tutorial.md), and our [samples](https://github.com/onenotedev). Also, learn how to [create absolute positioned elements](onenote_abs_pos.md), [use note tags](onenote_note_tags.md), and [extract data](onenote_extract_data.md) for business card captures and online recipe and product listings.
 
-The OneNote API is strict about some formats, such as CRLF newlines in a multipart message body. To reduce the risk of creating malformed payloads, you should use a library to construct multipart messages. 
+Microsoft Graph is strict about some formats, such as CRLF newlines in a multipart message body. To reduce the risk of creating malformed payloads, you should use a library to construct multipart messages. 
  If you do receive a 400 status for a malformed payload, check the formatting of newlines and whitespaces, and check for encoding issues. For example, try using `charset=utf-8` (example: `Content-Type: text/html; charset=utf-8`).
 
-See [requirements and limitations for input HTML](#input-html-rules) and [size limits for POST requests](..\howto\onenote-images-files.md#size-limits).
+See [requirements and limitations for input HTML](#input-html-rules) and [size limits for POST requests](onenote_images_files.md#size-limits).
 
 
 <a name="request-response-info"></a>
@@ -186,7 +187,7 @@ See [requirements and limitations for input HTML](#input-html-rules) and [size l
 | Request data | Description |  
 |------|------|  
 | Protocol | All requests use the SSL/TLS HTTPS protocol. |  
-| Authorization header | <p>`Bearer {token}`, where *{token}* is a valid OAuth 2.0 access token for your registered app.</p><p>If missing or invalid, the request fails with a 401 status code. See [Authentication and permissions](..\howto\onenote-auth.md).</p> |  
+| Authorization header | <p>`Bearer {token}`, where *{token}* is a valid OAuth 2.0 access token for your registered app.</p><p>If missing or invalid, the request fails with a 401 status code. See [Authentication and permissions](permission_reference.md).</p> |  
 | Content-Type header | <p>`text/html` or `application/xhtml+xml` for the HTML content, whether it's sent directly in the message body or in the required "Presentation" part of multipart requests.</p><p>Multipart requests are required when sending binary data, and use the `multipart/form-data; boundary=part-boundary` content type, where *{part-boundary}* is a string that signals the start and end of each data part.</p> |  
 | Accept header | `application/json` | 
 
@@ -200,9 +201,9 @@ See [requirements and limitations for input HTML](#input-html-rules) and [size l
 
 
 <a name="root-url"></a>
-### Constructing the OneNote service root URL
+### Constructing the Microsoft Graph service root URL
 
-The OneNote service root URL uses the following format for all calls to the OneNote API. `https://graph.microsoft.com/{version}/me/onenote/`  The `version` segment in the URL represents the version of Microsoft Graph that you want to use. Use `v1.0` for stable production code. Use `beta` to try out a feature that's in development. Features and functionality in beta may change, so you shouldn't use it in your production code. Use `me` for OneNote content that the current user can access (owned and shared). Use `users/{id}` for OneNote content that the specified user (in the URL) has shared with the current user. Use the [Microsoft Graph](https://graph.microsoft.com/v1.0/users) to get user IDs. 
+The Microsoft Graph service root URL uses the following format for all calls to Microsoft Graph. `https://graph.microsoft.com/{version}/me/onenote/`  The `version` segment in the URL represents the version of Microsoft Graph that you want to use. Use `v1.0` for stable production code. Use `beta` to try out a feature that's in development. Features and functionality in beta may change, so you shouldn't use it in your production code. Use `me` for OneNote content that the current user can access (owned and shared). Use `users/{id}` for OneNote content that the specified user (in the URL) has shared with the current user. Use the [Microsoft Graph](https://graph.microsoft.com/v1.0/users) to get user IDs. 
 
 
 <a name="permissions"></a>
@@ -220,9 +221,9 @@ For more information about permission scopes and how they work, see [Microsoft G
 <a name="see-also"></a>
 ## Additional resources
 
-- [Add images and files](../howto/onenote-images-files.md)
-- [Create absolute positioned elements](onenote-abs-pos.md)  
-- [Extract data](../howto/onenote-extract-data.md)
-- [Use note tags](../howto/onenote-note-tags.md)
+- [Add images and files](onenote_images_files.md)
+- [Create absolute positioned elements](onenote_abs_pos.md)  
+- [Extract data](onenote_extract_data.md)
+- [Use note tags](onenote_note_tags.md)
 [!INCLUDE [additional resources](includes/additionalResources.txt)]
 
