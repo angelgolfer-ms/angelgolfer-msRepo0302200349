@@ -581,7 +581,7 @@ The **expand** query string option can be used with the following navigation pro
 | Request data | Description |  
 |------|------|  
 | Protocol | All requests use the SSL/TLS HTTPS protocol. |  
-| Authorization header | <p>`Bearer {token}`, where *{token}* is a valid OAuth 2.0 access token for your registered app.</p><p>If missing or invalid, the request fails with a 401 status code. See [Authentication and permissions](permission_reference.md).</p> |  
+| Authorization header | <p>`Bearer {token}`, where *{token}* is a valid OAuth 2.0 access token for your registered app.</p><p>If missing or invalid, the request fails with a 401 status code. See [Authentication and permissions](permissions_reference.md).</p> |  
 | Accept header | <p>- `application/json` for OneNote entities and entity sets</p><p>- `text/html` for page content</p> | 
 
 | Response data | Description |  
