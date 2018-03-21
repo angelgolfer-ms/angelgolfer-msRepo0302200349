@@ -173,7 +173,7 @@ Content-Type:application/pdf
 --MyPartBoundary198374--
 ```
 
-For more examples that show how to create pages that contain images and other files, see [Add images and files](onenote_images_files.md), our [tutorials](../howto/onenote-tutorial.md), and our [samples](https://github.com/onenotedev). Also, learn how to [create absolute positioned elements](onenote_abs_pos.md), [use note tags](onenote_note_tags.md), and [extract data](onenote_extract_data.md) for business card captures and online recipe and product listings.
+For more examples that show how to create pages that contain images and other files, see [Add images and files](onenote_images_files.md), our [tutorials](../howto/onenote-tutorial.md), and our [samples](https://github.com/onenotedev). Also, learn how to [create absolute positioned elements](onenote-abs-pos.md), [use note tags](onenote_note_tags.md), and [extract data](onenote-extract-data.md) for business card captures and online recipe and product listings.
 
 Microsoft Graph is strict about some formats, such as CRLF newlines in a multipart message body. To reduce the risk of creating malformed payloads, you should use a library to construct multipart messages. 
  If you do receive a 400 status for a malformed payload, check the formatting of newlines and whitespaces, and check for encoding issues. For example, try using `charset=utf-8` (example: `Content-Type: text/html; charset=utf-8`).
@@ -222,8 +222,8 @@ For more information about permission scopes and how they work, see [Microsoft G
 ## Additional resources
 
 - [Add images and files](onenote_images_files.md)
-- [Create absolute positioned elements](onenote_abs_pos.md)  
-- [Extract data](onenote_extract_data.md)
+- [Create absolute positioned elements](onenote-abs-pos.md)  
+- [Extract data](onenote-extract-data.md)
 - [Use note tags](onenote_note_tags.md)
 [!INCLUDE [additional resources](includes/additionalResources.txt)]
 

@@ -145,7 +145,7 @@ Many elements on the page can be updated, but each element type supports specifi
 | Element | Replace | Append child | Insert sibling |  
 |------|------|------|------|  
 | body<br /> (targets first div on the page) | no | **yes** | no |  
-| div<br /> ([absolute positioned](onenote_abs_pos.md)) | no | **yes** | no |  
+| div<br /> ([absolute positioned](onenote-abs-pos.md)) | no | **yes** | no |  
 | div<br /> (within a div) | **yes** (id only) | **yes** | **yes** |   
 | img, object<br /> (within a div) | **yes** | no | **yes** |   
 | ol, ul | **yes** (id only) | **yes** | **yes** |   
@@ -156,8 +156,8 @@ Many elements on the page can be updated, but each element type supports specifi
 
 The following elements do not support any update actions.
 
-- img ([absolute positioned](onenote_abs_pos.md))
-- object ([absolute positioned](onenote_abs_pos.md))
+- img ([absolute positioned](onenote-abs-pos.md))
+- object ([absolute positioned](onenote-abs-pos.md))
 - tr, td
 - meta
 - head
