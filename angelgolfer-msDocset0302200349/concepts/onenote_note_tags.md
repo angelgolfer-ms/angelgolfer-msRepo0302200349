@@ -1,29 +1,10 @@
-ms.TocTitle: Use note tags
-Title: Use note tags
-Description: Add, update, and retrieve OneNote note tags.
-ms.ContentId: 8521e2bf-eca6-4e9b-8377-6babb2846f7c
-ms.topic: article (how-tos)
-ms.date: January 19, 2016
-
-[!INCLUDE [Add the O365API repo styles](../includes/controls/addo365apistyles.xml)]
-[!INCLUDE [Add the ONAPI repo styles](../includes/controls/addonapistyles.xml)]
-
 # Use note tags
 
 *__Applies to:__ Consumer notebooks on OneDrive | Enterprise notebooks on Office 365*
 
 Use the `data-tag` attribute to add and update check boxes, stars, and other built-in note tags on a OneNote page, as shown in the following image.
-<br />
 
-![Three note tags displayed on a OneNote page.](images\onenote\note-tags-example.png)
-
-<p id="top-padding">**In this article**</p>
-<p id="indent">[Note tag attributes](#attributes)</p>
-<p id="indent">[Add or update note tags](#add-update)</p>
-<p id="indent">[Retrieve note tags](#get)</p>
-<p id="indent">[Built-in note tags for OneNote](#built-in-tags)</p>
-<p id="indent">[Response information](#request-response-info)</p>
-<p id="indent">[Permissions](#permissions)</p>
+![Three note tags displayed on a OneNote page.](images/note-tags-example.png)
 
 
 <a name="attributes"></a>
@@ -31,9 +12,9 @@ Use the `data-tag` attribute to add and update check boxes, stars, and other bui
 
 In the HTML of a OneNote page, a note tag is represented by the `data-tag` attribute. For example:
 
-<p id="indent">An unchecked to-do box:  `<p data-tag="to-do">`</p>
-<p id="indent">A checked to-do box:  `<p data-tag="to-do:completed">`</p>
-<p id="indent">A star:  `<h2 data-tag="important">`</p>
+- An unchecked to-do box:  `<p data-tag="to-do">` 
+- A checked to-do box:  `<p data-tag="to-do:completed">` 
+- A star:  `<h2 data-tag="important">` 
 
 A `data-tag` value is composed of a shape, and sometimes a status. (*see all [supported values](#built-in-tags)*)
 
@@ -48,27 +29,26 @@ A `data-tag` value is composed of a shape, and sometimes a status. (*see all [su
 
 To add or update a built-in note tag, just use the `data-tag` attribute on a supported element. For example, here's a paragraph marked as important:
 
-```
+```html
 <p data-tag="important">...</p>
 ```
 
 Separate multiple note tags with commas:
 
-```
+```html
 <p data-tag="important, critical">...</p>
 ```
 
 You can define a `data-tag` on the following elements:
 
-<p id="indent">p</p>
-<p id="indent">ul, ol, li (*see more about [note tags on lists](#note-tags-lists)*)</p>
-<p id="indent">img</p>
-<p id="indent">h1 - h6</p>
-<p id="indent">title</p>
+- p 
+- ul, ol, li (*see more about [note tags on lists](#note-tags-lists)*)
+- img 
+- h1 - h6 
+- title 
 
-See [Built-in note tags](#built-in-tags) for a list of note tags that you can use with the OneNote API. Adding or updating custom tags using the OneNote API is not supported.
+See [Built-in note tags](#built-in-tags) for a list of note tags that you can use with Microsoft Graph. Adding or updating custom tags using Microsoft Graph is not supported.
  
-<br />
 **Examples**
 
 Here's a simple to-do list with the first item completed.
@@ -82,7 +62,7 @@ Here's a simple to-do list with the first item completed.
 Note that the `<p>` tags above each include a `data-id` attribute. This makes it easier to update the check-box note tags. For example, the following request marks the spring planting to-do item as completed.
 
 ``` 
-PATCH https://www.onenote.com/api/v1.0/me/notes/pages/{page-id}/content
+PATCH https://graph.microsoft.com/v1.0/me/onenote/notebooks/pages/{page-id}/content
 
 Content-Type: application/json
 Authorization: Bearer {token}
@@ -99,7 +79,7 @@ Authorization: Bearer {token}
 The following request creates a page that contains all [built-in note tags](#built-in-tags).
 
 ``` 
-POST https://www.onenote.com/api/v1.0/me/notes/pages
+POST https://graph.microsoft.com/v1.0/me/onenote/notebooks/pages
 
 Content-Type: text/html
 Authorization: Bearer {token}
@@ -167,7 +147,7 @@ Authorization: Bearer {token}
 </html>
 ``` 
 
-For more information about creating pages, see [Create OneNote pages](../howto/onenote-create-page.md). For more about updating pages, see [Update OneNote pages](../howto/onenote-update-page.md).
+For more information about creating pages, see [Create OneNote pages](onenote-create-page.md). For more about updating pages, see [Update OneNote pages](onenote-update-page.md).
 
 
 <a name="note-tags-lists"></a>
@@ -189,7 +169,7 @@ Here are some guidelines for working with note tags on lists:
 
    <p id="indent">Target the `li` elements individually and define the `data-tag` on the `li` element. Any individually addressed `li` element can be updated to display a unique note tag, no matter how the list was originally defined.</p>
 
-The guidelines are based on the following rules that are applied by the OneNote API:
+The guidelines are based on the following rules that are applied by Microsoft Graph:
 
 - The `data-tag` setting for a `ul` or `ol` overrides all settings on child `li` elements. This applies even when the `ul` or `ol` doesn't specify a `data-tag` but its child `li` elements do.
 
@@ -241,7 +221,7 @@ The following code shows how some of these rules are applied. The input HTML cre
 
 Built-in note tags are included in the output HTML when you get page content:
 
-<p id="indent">`GET ../api/v1.0/pages/{page-id}/content`</p>
+`GET ../api/v1.0/pages/{page-id}/content` 
 
 A `data-tag` attribute in the output HTML always includes a shape value, and it only includes a status if it represents a check-box note tag that's set to completed. The following examples show the input HTML used to create some note tags and the output HTML that's returned.
 
@@ -275,81 +255,35 @@ A `data-tag` attribute in the output HTML always includes a shape value, and it 
 
 Note that the `data-tag` attribute defined at the list level is pushed to its list items. For more information about using note tags with lists, see [Note tags on lists](#note-tags-lists).
 
->In the output HTML, the definition and remember-for-later note tags are both returned as `data-tag="remember-for-later"`. The `title` element doesn't return any note tag information.
+> [!NOTE]
+> In the output HTML, the definition and remember-for-later note tags are both returned as `data-tag="remember-for-later"`. The `title` element doesn't return any note tag information.
 
 <a name="built-in-tags"></a>
 ## Built-in note tags for OneNote
 
 OneNote includes the following built-in note tags:
 
-![All built-in note tags.](images\onenote\note-tags-all.png)
+![All built-in note tags.](images/note-tags-all.png)
 
 The values you can assign to the `data-tag` attribute are shown below. Custom tags are not supported.
 
-**shape[:status]**
-
-to-do<br />to-do:completed
- 
-important
-
-question  
-
-definition  
-
-highlight  
-
-contact  
-
-address  
-
-phone-number  
-
-web-site-to-visit  
-
-idea  
-
-password  
-
-critical
-
-project-a
-
-project-b
-
-remember-for-later
-
-movie-to-see
-
-book-to-read
-  
-music-to-listen-to
- 
-source-for-article
- 
-remember-for-blog
- 
-discuss-with-person-a<br />discuss-with-person-a:completed
-
-discuss-with-person-b<br />discuss-with-person-b:completed
-
-discuss-with-manager<br />discuss-with-manager:completed
-
-send-in-email
- 
-schedule-meeting<br />schedule-meeting:completed
-
-call-back<br />call-back:completed
- 
-to-do-priority-1<br />to-do-priority-1:completed
- 
-to-do-priority-2<br />to-do-priority-2:completed
-
-client-request<br />client-request:completed
+||Tags||
+|:---|:---|:-----|
+| shape[:status] |to-do<br />to-do:completed|important|
+|question|definition|highlight|
+|contact|address|phone-number|
+|web-site-to-visit|idea|password|
+|critical|project-a|project-b|
+|remember-for-later|movie-to-see|book-to-read|
+|music-to-listen-to|source-for-article|remember-for-blog|
+|discuss-with-person-a<br />discuss-with-person-a:completed|discuss-with-person-b<br />discuss-with-person-b:completed|discuss-with-manager<br />discuss-with-manager:completed|
+|send-in-email|schedule-meeting<br />schedule-meeting:completed|call-back<br />call-back:completed|
+|to-do-priority-1<br />to-do-priority-1:completed|to-do-priority-2<br />to-do-priority-2:completed|client-request<br />client-request:completed|
 
 
 <a name="request-response-info"></a>
 ## Response information
-The OneNote API returns the following information in the response.
+Microsoft Graph returns the following information in the response.
 
 | Response data | Description |  
 |------|------|  
@@ -365,11 +299,11 @@ To create or update OneNote pages, you'll need to request appropriate permission
 
 **Permissions for _POST pages_**
 
-[!INCLUDE [Create perms](../includes/onenote/create-perms.txt)] 
+[!INCLUDE [Create perms](includes/create-perms.txt)] 
 
 **Permissions for _PATCH pages_**
 
-[!INCLUDE [Update perms](../includes/onenote/update-perms.txt)]
+[!INCLUDE [Update perms](includes/update-perms.txt)]
 
 For more information about permission scopes and how they work, see [OneNote permission scopes](../howto/onenote-auth.md).
 
@@ -379,10 +313,6 @@ For more information about permission scopes and how they work, see [OneNote per
 
 - [Create OneNote pages](../howto/onenote-create-page.md)
 - [Update OneNote page content](../howto/onenote-update-page.md)
-- [OneNote development](../howto/onenote-landing.md)
-- [OneNote Dev Center](http://dev.onenote.com/)
-- [OneNote Developer Blog](http://go.microsoft.com/fwlink/?LinkID=390183)
-- [OneNote development questions on Stack Overflow](http://go.microsoft.com/fwlink/?LinkID=390182)
-- [OneNote GitHub repos](http://go.microsoft.com/fwlink/?LinkID=390178)  
+[!INCLUDE [](includes/additionalResources.txt)] 
 
 

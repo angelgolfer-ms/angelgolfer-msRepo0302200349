@@ -1,33 +1,13 @@
-﻿ms.TocTitle: Update page content
-Title: Update OneNote page content
-Description: Update the HTML content of OneNote pages.
-ms.ContentId: f597bd73-866e-48a3-95c1-91b9bfabffa2
-ms.topic: article (how-tos)
-ms.date: November 18, 2015
-
-[!INCLUDE [Add the O365API repo styles](../includes/controls/addo365apistyles.xml)]
-[!INCLUDE [Add the ONAPI repo styles](../includes/controls/addonapistyles.xml)]
-
-
-# Update OneNote page content
+﻿# Update OneNote page content
 
 *__Applies to:__ Consumer notebooks on OneDrive | Enterprise notebooks on Office 365*
 
 
 To update the content of a OneNote page, you send a PATCH request to the page's *content* endpoint:
 
-<p id="indent">`PATCH ../notes/pages/{id}/content`</p>
+`PATCH ../notes/pages/{id}/content`</p>
 
-Send a JSON change object in the message body. If the request is successful, the OneNote API returns a 204 HTTP status code.
-
-
-<p  id="top-padding">**In this article**</p>
-<p id="indent">[Construct the request URI](#request-uri)</p>
-<p id="indent">[Construct the message body](#message-body)</p>
-<p id="indent">[Supported elements and actions](#support-matrix)</p>
-<p id="indent">[Example requests](#examples)</p>
-<p id="indent">[Request and response information](#request-response-info)</p>
-<p id="indent">[Permissions](#permissions)</p>
+Send a JSON change object in the message body. If the request is successful, the Microsoft Graph returns a 204 HTTP status code.
 
 
 <a name="request-uri"></a>
@@ -35,26 +15,25 @@ Send a JSON change object in the message body. If the request is successful, the
 
 To construct the request URI, start with the service root URL:
 
-[!INCLUDE [service root url](../includes/onenote/service-root-url.xml)]
+`https://graph.microsoft.com/v1.0/me/onenote`
 
 Then append the page's *content* endpoint:
 
-<p id="outdent1">**Get the page HTML and all defined *data-id* values**</p>
-<p id="indent">`../pages/{id}/content`</p>
+**Get the page HTML and all defined *data-id* values**</p>
+`../pages/{id}/content`   
 
-<p id="outdent1">**Get the page HTML, all defined *data-id* values, and all generated *id* values**</p>
-<p id="indent">`../pages/{page-id}/content?includeIDs=true`</p>
+**Get the page HTML, all defined *data-id* values, and all generated *id* values**  
+`../pages/{page-id}/content?includeIDs=true` 
 
 The **data-id** and **id** values are used as **target** identifiers for the elements you want to update.
 
-<br />
-Your full request URI will look like one of these:
+ 
+Your full request URI will look like this:
 
-<p id="indent">`https://www.onenote.com/api/v1.0/me/notes/pages/{id}/content`</p>
-<p id="indent">`https://www.onenote.com/api/v1.0/myorganization/sitecollections/{id}/sites/{id}/notes/pages/{id}/content`</p>
-<p id="indent">`https://www.onenote.com/api/v1.0/myorganization/groups/{id}/notes/pages/{id}/content`</p>
+`https://graph.microsoft.com/v1.0/me/onenote/pages/{id}/content`
 
-[!INCLUDE [service root url note](../includes/onenote/service-root-note.xml)]
+
+Learn more about the [service root URL](#root-url).
 
 
 <a name="message-body"></a>
@@ -66,7 +45,7 @@ Your changes are sent in the message body as an array of JSON change objects. Ea
 
 The following array defines two changes. The first inserts an image above a paragraph as a sibling, and the second appends an item to a list as a last child.
 
-```
+```json
 [
    {
     'target':'#para-id',
@@ -94,8 +73,8 @@ The element to update. The value must be one of the following identifiers:
 
 | Identifier | Description |  
 |------|------|  
-| #{data-id} | <p>This ID is optionally defined on elements in the input HTML when [creating a page](..\howto\onenote-create-page.md) or [updating a page](..\howto\onenote-update-page.md). Prefix the value with a #.</p><p> Example: `'target':'#intro'` targets the element `<div data-id="intro" ...>`</p> |  
-| id | <p>This is the [generated ID](#generated-ids) from the OneNote API, and is required for most replace operations. Do not prefix with a #.</p><p> Example: `'target':'div:{33f8a2...}{37}'` targets the element `<div id="div:{33f8a2...}{37}" ...>`</p><p>Don't confuse these with any **id** values defined in the [input HTML](..\howto\onenote-input-output-html.md). All **id** values sent in the input HTML are discarded.</p> |  
+| #{data-id} | <p>This ID is optionally defined on elements in the input HTML when [creating a page](onenote_create_page.md) or [updating a page](onenote_update_page.md). Prefix the value with a #.</p><p> Example: `'target':'#intro'` targets the element `<div data-id="intro" ...>`</p> |  
+| id | <p>This is the [generated ID](#generated-ids) from Microsoft Graph, and is required for most replace operations. Do not prefix with a #.</p><p> Example: `'target':'div:{33f8a2...}{37}'` targets the element `<div id="div:{33f8a2...}{37}" ...>`</p><p>Don't confuse these with any **id** values defined in the [input HTML](onenote_input_output_html.md). All **id** values sent in the input HTML are discarded.</p> |  
 | body | The keyword that targets the first div on the page. Do not prefix with a #. |  
 | title | The keyword that targets the page title. Do not prefix with a #. |  
  
@@ -123,13 +102,14 @@ A string of well-formed HTML to add to the page, and any image or file binary da
 
 <a name="generated-ids"></a>
 ### Generated IDs
-The OneNote API generates **id** values for the elements on the page that can be updated. To get generated IDs, use the `includeIDs=true` query string expression in your GET request:
+Microsoft Graph generates **id** values for the elements on the page that can be updated. To get generated IDs, use the `includeIDs=true` query string expression in your GET request:
 
-<p id="indent">`GET ../notes/pages/{page-id}/content?includeIDs=true`</p>
+`GET ../notes/pages/{page-id}/content?includeIDs=true` 
 
->The API discards all **id** values that are defined in the [input HTML](..\howto\onenote-input-output-html.md) of create-page and update-page requests.
+> [!NOTE]
+> The API discards all **id** values that are defined in the [input HTML](onenote_input_output_html.md) of create-page and update-page requests.
 
-The following example shows generated IDs for a paragraph and an image in the [output HTML](..\howto\onenote-input-output-html.md) of a page.
+The following example shows generated IDs for a paragraph and an image in the [output HTML](onenote_input_output_html.md) of a page.
 
 ```html
 <p id="p:{33f8a242-7c33-4bb2-90c5-8425a68cc5bf}{40}">Some text on the page</p>
@@ -147,7 +127,7 @@ You can specify target elements by using the **data-id** or **id** value, as fol
 
 The following example uses the **id** value for the target. Don't use the # prefix with a generated ID.
 
-```
+```json
 [
    {
     'target':'p:{33f8a242-7c33-4bb2-90c5-8425a68cc5bf}{40}',
@@ -165,7 +145,7 @@ Many elements on the page can be updated, but each element type supports specifi
 | Element | Replace | Append child | Insert sibling |  
 |------|------|------|------|  
 | body<br /> (targets first div on the page) | no | **yes** | no |  
-| div<br /> ([absolute positioned](../howto/onenote-abs-pos.md)) | no | **yes** | no |  
+| div<br /> ([absolute positioned](onenote_abs_pos.md)) | no | **yes** | no |  
 | div<br /> (within a div) | **yes** (id only) | **yes** | **yes** |   
 | img, object<br /> (within a div) | **yes** | no | **yes** |   
 | ol, ul | **yes** (id only) | **yes** | **yes** |   
@@ -176,8 +156,8 @@ Many elements on the page can be updated, but each element type supports specifi
 
 The following elements do not support any update actions.
 
-- img ([absolute positioned](../howto/onenote-abs-pos.md))
-- object ([absolute positioned](../howto/onenote-abs-pos.md))
+- img ([absolute positioned](onenote_abs_pos.md))
+- object ([absolute positioned](onenote_abs_pos.md))
 - tr, td
 - meta
 - head
@@ -203,7 +183,7 @@ The **append** action adds a child to a **body**, **div** (within a div), **ol**
 
 The following example adds two child nodes to the **div1** element. It adds an image as the first child and a paragraph as the last child. 
 
-```
+```json
 [
  {
     'target':'#div1',
@@ -226,7 +206,7 @@ You can use the **body** shortcut to append a child element inside the first div
 
 The following example adds two paragraphs as the first child and the last child to the first div on the page. Don't use a # with the **body** target. This example uses the **prepend** action as a shortcut for **append** + **before**.
 
-```
+```json
 [
   {
     'target':'body',
@@ -246,7 +226,7 @@ The following example adds two paragraphs as the first child and the last child 
 
 The following example adds a list item as a last child to the target list. The **list-style-type** property is defined because the item uses a non-default list style.
 
-```
+```json
 [
   {
     'target':'#circle-ul',
@@ -265,7 +245,7 @@ The **insert** action adds a sibling to the target element. The **position** att
 
 The following example adds two sibling nodes to the page. It adds an image above the **para1** element and a paragraph below the **para2** element.
 
-```none
+```json
 [
   {
      'target':'#para1',
@@ -290,7 +270,7 @@ You can use either the **data-id** or generated **id** as the target value to re
 
 The following example replaces an image with a div by using the image's **data-id** as the target. 
 
-```
+```json
 [
   {
     'target':'#img1',
@@ -305,7 +285,7 @@ The following example replaces an image with a div by using the image's **data-i
 
 This example shows how to update a table by using its generated ID. Replacing **tr** and **td** elements is not supported, but you can replace the entire table.
 
-```
+```json
 [
   {
     'target':'table:{de3e0977-94e4-4bb0-8fee-0379eaf47486}{11}',
@@ -324,7 +304,7 @@ This example shows how to update a table by using its generated ID. Replacing **
 
 This example shows how to change the title of a page. To change the title, use the **title** keyword as the target value. Don't use a # with the title target.
 
-```
+```json
 [
   {
     'target':'title',
@@ -339,7 +319,7 @@ This example shows how to change the title of a page. To change the title, use t
 
 The following example uses the replace action to change a to-do check box item to a completed state.
 
-```
+```json
 [
   {
     'target':'#task1',
@@ -349,7 +329,7 @@ The following example uses the replace action to change a to-do check box item t
 ]
 ```
 
-See [Use note tags](https://msdn.microsoft.com/library/office/mt159148.aspx) for more about using the **data-tag** attribute.
+See [Use note tags](onenote_note_tags.md) for more about using the **data-tag** attribute.
 
 
 <a name="complete-requests"></a>
@@ -359,8 +339,8 @@ The following examples show complete PATCH requests.
 **Request with text content only**  
 The following example shows a PATCH request that uses the **application/json** content type. You can use this format when your content doesn't contain binary data.
 
-```none
-PATCH https://www.onenote.com/api/v1.0/me/notes/pages/{page-id}/content
+```
+PATCH https://graph.microsoft.com/v1.0/me/onenote/notebooks/pages/{page-id}/content
 
 Content-Type: application/json
 Authorization: Bearer {token}
@@ -384,8 +364,8 @@ Authorization: Bearer {token}
 **Multipart request with binary content**  
 The following example shows a multipart PATCH request that includes binary data. Multipart requests require a "Commands" part that specifies the **application/json** content type and contains the array of JSON change objects. Other data parts can contain binary data. Part names typically are strings appended with the current time in milliseconds or a random GUID.
 
-```none
-PATCH https://www.onenote.com/api/v1.0/me/notes/pages/{page-id}/content
+```
+PATCH https://graph.microsoft.com/v1.0/me/onenote/notebooks/pages/{page-id}/content
 
 Content-Type: multipart/form-data; boundary=PartBoundary123
 Authorization: Bearer {token}
@@ -422,7 +402,7 @@ Content-Type: image/png
 | Request data | Description |  
 |------|------|  
 | Protocol | All requests use the SSL/TLS HTTPS protocol. |  
-| Authorization header | <p>`Bearer {token}`, where *{token}* is a valid OAuth 2.0 access token for your registered app.</p><p>If missing or invalid, the request fails with a 401 status code. See [Authentication and permissions](..\howto\onenote-auth.md).</p> |  
+| Authorization header | <p>`Bearer {token}`, where *{token}* is a valid OAuth 2.0 access token for your registered app.</p><p>If missing or invalid, the request fails with a 401 status code. See [Authentication and permissions](permissions_reference.md).</p> |  
 | Content-Type header | <p>`application/json` for the array of JSON change objects, whether sent directly in the message body or in the required "Commands" part of [multipart requests](#multipart).</p><p>Multipart requests are required when sending binary data, and use the `multipart/form-data; boundary=part-boundary` content type, where *{part-boundary}* is a string that signals the start and end of each data part.</p> |  
  
 
@@ -434,9 +414,9 @@ Content-Type: image/png
  
 
 <a name="root-url"></a>
-### Constructing the OneNote service root URL
+### Constructing the Microsoft Graph service root URL
 
-[!INCLUDE [service root url section](../includes/onenote/service-root-section.xml)]
+[!INCLUDE [service root url section]( includes/service-root-section.txt)]
 
 
 <a name="permissions"></a>
@@ -446,15 +426,11 @@ To update OneNote pages, you'll need to request appropriate permissions. Choose 
 
 [!INCLUDE [Update perms](../includes/onenote/update-perms.txt)]
 
-For more information about permission scopes and how they work, see [OneNote permission scopes](../howto/onenote-auth.md).
+For more information about permission scopes and how they work, see [OneNote permission scopes](permissions_reference.md).
    
 
 <a name="see-also"></a>
 ## Additional resources
 
-- [Add images and files](../howto/onenote-images-files.md)
-- [OneNote development](../howto/onenote-landing.md)
-- [OneNote Dev Center](http://dev.onenote.com/)
-- [OneNote Developer Blog](http://go.microsoft.com/fwlink/?LinkID=390183)
-- [OneNote development questions on Stack Overflow](http://go.microsoft.com/fwlink/?LinkID=390182) 
-- [OneNote GitHub repos](http://go.microsoft.com/fwlink/?LinkID=390178)  
+- [Add images and files](onenote_images_files.md)
+[!INCLUDE [additional resources](includes/additionalResources.txt)]  

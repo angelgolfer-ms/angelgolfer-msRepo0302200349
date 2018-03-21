@@ -1,15 +1,4 @@
-﻿ms.TocTitle: Work with class notebooks
-Title: Work with class notebooks
-Description: Learn how to create and manage class notebooks.
-ms.ContentId: b3eca630-4f08-4157-b01b-c38df7782648
-ms.topic: article (how-tos)
-ms.date: May 24, 2016
-
-[!INCLUDE [Add the O365API repo styles](../includes/controls/addo365apistyles.xml)]
-[!INCLUDE [Add the ONAPI repo styles](../includes/controls/addonapistyles.xml)]
-
-
-# Work with class notebooks
+﻿# Work with class notebooks
 
 *__Applies to:__ Enterprise notebooks on Office 365*
 
@@ -17,17 +6,8 @@ Schools, colleges, and universities worldwide use [class notebooks](https://www.
 
 You can use the *classNotebooks* endpoint to perform common tasks for class notebooks, such as creating class notebooks and adding or removing students.
 
-<p id="top-padding">**In this article**</p>
-<p id="indent">[Construct the request URI](#request-uri)</p>
-<p id="indent">[Create class notebooks](#create)</p>
-<p id="indent">[Update class notebooks](#update)</p>
-<p id="indent">[Get class notebooks](#get)</p>
-<p id="indent">[Delete class notebooks](#delete)</p>
-<p id="indent">[Add students and teachers](#add-people)</p>
-<p id="indent">[Remove students and teachers](#remove-people)</p>
-<p id="indent">[Insert sections](#insert-sections)</p>
-
->The OneNote API provides the *classNotebooks* endpoint for operations that are specific to class notebooks.
+> [!NOTE]
+> Microsoft Graph provides the *classNotebooks* endpoint for operations that are specific to class notebooks.
 
 
 <a name="request-uri"></a>
@@ -39,39 +19,39 @@ To construct the request URI, start with the service root URL for your platform:
 
 Then append the *classNotebooks* endpoint, followed a resource path, as needed:
 
-<p id="outdent1"><b>[Create class notebooks](#create)</b></p>
-<p id="indent1">`../classNotebooks[?omkt,sendemail]`</p>
+[Create class notebooks](#create)
+- `../classNotebooks[?omkt,sendemail]` 
 
-<p id="outdent1"><b>[Update a class notebook](#update)</b></p>
-<p id="indent1">`../classNotebooks/{notebook-id}`</p>
+[Update a class notebook](#update)
+- `../classNotebooks/{notebook-id}` 
 
-<p id="outdent1"><b>[Get one or more class notebooks](#get)</b></p>
-<p id="indent1">`../classNotebooks`</p>
-<p id="indent1">`../classNotebooks/{notebook-id}`</p>
+[Get one or more class notebooks](#get)
+- `../classNotebooks` 
+- `../classNotebooks/{notebook-id}` 
 
-<p id="outdent1"><b>[Delete a class notebook](#delete)</b></p>
-<p id="indent1">`../classNotebooks/{notebook-id}`</p>
+[Delete a class notebook](#delete)
+- `../classNotebooks/{notebook-id}` 
 
-<p id="outdent1"><b>[Add students or teachers](#add-people)</b></p>
-<p id="indent1">`../classNotebooks/{notebook-id}/students`</p>
-<p id="indent1">`../classNotebooks/{notebook-id}/teachers`</p>
+[Add students or teachers](#add-people) 
+- `../classNotebooks/{notebook-id}/students` 
+- `../classNotebooks/{notebook-id}/teachers` 
 
-<p id="outdent1"><b>[Remove students or teachers](#remove-people)</b></p>
-<p id="indent1">`../classNotebooks/{notebook-id}/students/{student-id}`</p>
-<p id="indent1">`../classNotebooks/{notebook-id}/teachers/{teacher-id}`</p>
+[Remove students or teachers](#remove-people)  
+- `../classNotebooks/{notebook-id}/students/{student-id}` 
+- `../classNotebooks/{notebook-id}/teachers/{teacher-id}` 
 
-<p id="outdent1"><b>[Insert sections](#insert-sections)</b></p>
-<p id="indent1">`../classNotebooks/{notebook-id}/copySectionsToContentLibrary`</p>
+[Insert sections](#insert-sections) 
+- `../classNotebooks/{notebook-id}/copySectionsToContentLibrary` 
 
-<br />
+ 
 Your full request URI will look something like these examples:
-<p id="indent">`https://www.onenote.com/api/v1.0/me/notes/classNotebooks/{id}/teachers/{id}`</p>
-<p id="indent">`https://www.onenote.com/api/v1.0/users/{id}/notes/classNotebooks/{id}/students`</p>
-<p id="indent">`https://www.onenote.com/api/v1.0/myOrganization/siteCollections/{id}/sites/{id}/notes/classNotebooks`</p>
-<p id="indent">`https://www.onenote.com/api/v1.0/myOrganization/groups/{id}/notes/classNotebooks/{id}`</p>
-<p id="indent">`https://www.onenote.com/api/v1.0/me/notes/classNotebooks/{id}/copySectionsToContentLibrary`</p>
+- `https://www.onenote.com/api/v1.0/me/notes/classNotebooks/{id}/teachers/{id}` 
+- `https://www.onenote.com/api/v1.0/users/{id}/notes/classNotebooks/{id}/students` 
+- `https://www.onenote.com/api/v1.0/myOrganization/siteCollections/{id}/sites/{id}/notes/classNotebooks` 
+- `https://www.onenote.com/api/v1.0/myOrganization/groups/{id}/notes/classNotebooks/{id}` 
+- `https://www.onenote.com/api/v1.0/me/notes/classNotebooks/{id}/copySectionsToContentLibrary` 
 
-[!INCLUDE [service root url note](../includes/onenote/service-root-note.xml)]
+Learn more about the [service root URL](#root-url).
 
 
 <a name="create"></a>
@@ -79,7 +59,7 @@ Your full request URI will look something like these examples:
 
 To create a class notebook, send a POST request to the *classNotebooks* endpoint. 
 
-<p id="indent">`POST ../classNotebooks[?omkt,sendemail]`</p>
+`POST ../classNotebooks[?omkt,sendemail]`</p>
 
 In the message body, send a JSON object with the class notebook creation parameters. 
 
