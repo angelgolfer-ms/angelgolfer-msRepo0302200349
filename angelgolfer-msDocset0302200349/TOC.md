@@ -20,13 +20,14 @@
 ## [Xamarin](concepts/xamarin.md)
 
 # LEARN 
-# [Users and identity](concepts\azuread-users-identity-concept-overview.md)
+# [Users](concepts\azuread-users-concept-overview.md)
 # [Groups](concepts\office365-groups-concept-overview.md)
 # [Calendar (Outlook)](concepts\outlook-calendar-concept-overview.md)
 ## [Find meeting times](concepts\findmeetingtimes_example.md)
 # [Cross devices (Project Rome) (preview)](concepts\project-rome-concept-overview.md)
 # [Education](concepts\education-concept-overview.md)
 # [Files (OneDrive)](concepts\onedrive-concept-overview.md)
+# [Identity (Azure AD)](concepts\azuread-identity-concept-overview.md)
 # [Mail (Outlook)](concepts\outlook-mail-concept-overview.md)
 ## [Create and send messages](concepts\outlook-create-send-messages.md)
 ## [Organize messages](concepts\outlook-organize-messages.md)
@@ -327,7 +328,9 @@
 #### [Get permission](api-reference/v1.0/api/permission_get.md)
 #### [Update permission](api-reference/v1.0/api/permission_update.md)
 #### [Delete permission](api-reference/v1.0/api/permission_delete.md)
-## [Identity and access (Azure Active Directory)](api-reference/v1.0/resources/azure_ad_overview.md)
+
+
+## [Access managment (Azure AD)](api-reference/v1.0/resources/azure_ad_overview.md)
 ### [Contracts](api-reference/v1.0/resources/contract.md)
 #### [Get contract](api-reference/v1.0/api/contract_get.md)
 #### [List contracts](api-reference/v1.0/api/contract_list.md)
@@ -383,6 +386,8 @@
 #### [List subscribedSkus](api-reference/v1.0/api/subscribedsku_list.md)
 #### [Get subscribedSku](api-reference/v1.0/api/subscribedsku_get.md)
 
+## Identity management (Azure AD)
+## Permissions and policies (Azure AD)
 
 ## [Mail (Outlook)](api-reference/v1.0/resources/mail_api_overview.md)
 ### [Message](api-reference/v1.0/resources/message.md)
