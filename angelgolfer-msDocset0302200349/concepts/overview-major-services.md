@@ -58,6 +58,14 @@ Reports
 
 -->
 
+## Identity and access management
+
+|Feature     |Supporting services  |Description |More information |
+|:-----------|:--------------------|:-----------|:----------------|
+| Users and identity management | Azure AD | Creates and manages directory resources such as users, groups, and applications. | [Azure AD users and identity management overview](../concepts/azuread-users-identity-concept-overview.md)  |
+| Policies and permissions | Azure AD | Grants users, groups, and applications access to resources and data. | [Azure AD permissions and policies overview](../concepts/azuread-permissions-policies-concept-overview.md) |
+
+
 ## Productivity
 
 |Feature     |Supporting services  |Description |More information |
@@ -69,6 +77,7 @@ Reports
 | Personal contacts | Outlook | Contacts manager on the web, mobile and desktop devices. It is part of the Outlook messaging communication hub in Office 365 that also lets users manage emails and schedule meetings.  | [Outlook personal contacts overview](../concepts/outlook-contacts-concept-overview.md) |
 | To-do tasks (preview) | Outlook | Tracks the start, due, and actual completion dates of to-do work items, and their recurrence, reminders, and status. Available on the web, mobile and desktop devices. It is part of the Outlook messaging communication hub in Office 365 that also lets users manage emails and contacts, and schedule meetings. | [Outlook to-do tasks overview](../concepts/outlook-tasks-concept-overview.md)  |
 | Workbooks and charts | Excel | Spreadsheet client that lets users do complex calculations, track, analyze, and visualize data, and do professional reporting. | [Excel workbooks and charts overview](../concepts/excel-concept-overview.md) |
+
 
 ## Collaboration
 
@@ -82,12 +91,19 @@ Reports
 |Teamwork (preview) |  Microsoft Teams | Chat-based workspace for teams to share files, notes, calendar, and plans. | [Microsoft Teams teamwork overview](../concepts/teams-concept-overview.md) |
 
 
-## Identity and access management
+## Social intelligence and analytics
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Users and identity management | Azure AD | Creates and manages directory resources such as users, groups, and applications. | [Azure AD users and identity management overview](../concepts/azuread-users-identity-concept-overview.md)  |
-| Policies and permissions | Azure AD | Grants users, groups, and applications access to resources and data. | [Azure AD permissions and policies overview](../concepts/azuread-permissions-policies-concept-overview.md) |
+| Social intelligence: document insights (preview) | Delve, OneDrive, Outlook, SharePoint | Uses advanced analytics and machine learning techniques to get documents trending around, viewed, modified, or shared by a user.  | [Social intelligence in Microsoft Graph](../concepts/social-intel-concept-overview.md)  |
+| Social intelligence: people | OneDrive, Outlook, SharePoint | Gets information about persons as ordered by their relevance to a user, determined by the user's communication and collaboration patterns, and business relationships.  | [Social intelligence in Microsoft Graph](../concepts/social-intel-concept-overview.md) |
+
+
+## Device management
+
+|Feature     |Supporting services  |Description |More information |
+|:-----------|:--------------------|:-----------|:----------------|
+|Mobile app and device management | Intune | Manages your organization’s mobile applications, and enrolls and configures devices. | [Intune device and mobbile app management overview](../concepts/intune-concept-overview.md) |
 
 
 ## Security intelligence
@@ -98,11 +114,11 @@ Reports
 | Security intelligence: security | Azure AD | Provides a unified gateway to security insights and actions across Microsoft solutions. | [Azure AD security intelligence overview](../concepts/azuread-security-intel-concept-overview.md) |
 
 
-## Device management
+## Cross-device experiences
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-|Mobile app and device management | Intune | Manages your organization’s mobile applications, and enrolls and configures devices. | [Intune device and mobbile app management overview](../concepts/intune-concept-overview.md) |
+| Cross-device experiences (preview) | Project Rome, Windows | Enables app experiences that transcend a single device, and instead move with the user from device to device regardless of its type and platform. | [Project Rome cross-device experiences overview](../concepts/project-rome-concept-overview.md) |
 
 
 ## Usage reports and audit logs
@@ -117,21 +133,6 @@ Reports
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
 | Education (preview) | Azure AD, Education | Supports schools, enrolments, and assignments, empowering educators to unlock creativity, promote teamwork, and provide a simple and safe experience for education. | [Education overview][Azure AD security intelligence overview](../concepts/education-concept-overview.md) |
-
-
-## Social intelligence and analytics
-
-|Feature     |Supporting services  |Description |More information |
-|:-----------|:--------------------|:-----------|:----------------|
-| Social intelligence: document insights (preview) | Delve, OneDrive, Outlook, SharePoint | Uses advanced analytics and machine learning techniques to get documents trending around, viewed, modified, or shared by a user.  | [Social intelligence in Microsoft Graph](../concepts/social-intel-concept-overview.md)  |
-| Social intelligence: people | OneDrive, Outlook, SharePoint | Gets information about persons as ordered by their relevance to a user, determined by the user's communication and collaboration patterns, and business relationships.  | [Social intelligence in Microsoft Graph](../concepts/social-intel-concept-overview.md) |
-
-
-## Cross-device experiences
-
-|Feature     |Supporting services  |Description |More information |
-|:-----------|:--------------------|:-----------|:----------------|
-| Cross-device experiences (preview) | Project Rome, Windows | Enables app experiences that transcend a single device, and instead move with the user from device to device regardless of its type and platform. | [Project Rome cross-device experiences overview](../concepts/project-rome-concept-overview.md) |
 
 
 ## Next steps
