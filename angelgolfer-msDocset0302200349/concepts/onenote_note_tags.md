@@ -288,8 +288,7 @@ Microsoft Graph returns the following information in the response.
 | Response data | Description |  
 |------|------|  
 | Success code | A 201 HTTP status code for a successful POST request, and a 204 HTTP status code for a successful PATCH request. |  
-| Errors or warnings | <p>You'll receive a warning in the **api.diagnostics** property of the response for any of the following conditions:</p><ul><li>The request contains an invalid `data-tag` attribute value.</li><li>The request contains an invalid `data-tag` status value. Checkbox note tags can have a `completed` status.</li></ul> |  
-| X-CorrelationId header | A GUID that uniquely identifies the request. You can use this value along with the value of the Date header when working with Microsoft support to troubleshoot issues. |  
+| Errors | Read [Error codes for OneNote APIs in Microsoft Graph](onenote_error_codes.md) to learn about OneNote errors that Microsoft Graph can return. |  
 
 
 <a name="permissions"></a>

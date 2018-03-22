@@ -409,8 +409,8 @@ Content-Type: image/png
 | Response data | Description |  
 |------|------|  
 | Success code | A 204 HTTP status code. No JSON data is returned for a PATCH request. |  
-| Errors | If the update request fails, the API returns errors in the **@api.diagnostics** object in the response body. The request will fail if:<br /> - The JSON object contains invalid attributes or is malformed.<br /> - The **target**, **action**, or **content** attributes are missing.<br /> - The target element does not exist.<br /> - The format of the target value is invalid. Example, a **data-id** isn't prefixed with a #.<br /> - The target element does not support the specified action.<br /> - The **action** or **position** value is invalid. |  
-| X-CorrelationId header | A GUID that uniquely identifies the request. You can use this value along with the value of the Date header when working with Microsoft support to troubleshoot issues. |  
+| Errors | Read [Error codes for OneNote APIs in Microsoft Graph](onenote_error_codes.md) to learn about OneNote errors that Microsoft Graph can return. |  
+ 
  
 
 <a name="root-url"></a>

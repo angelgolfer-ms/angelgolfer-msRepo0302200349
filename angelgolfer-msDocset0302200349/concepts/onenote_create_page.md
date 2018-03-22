@@ -4,7 +4,7 @@
 
 To create a OneNote page, you send a POST request to a *pages* endpoint. For example:
 
-<p id="indent">`POST ../notes/sections/{id}/pages`</p>
+`POST ../notes/sections/{id}/pages`</p>
 
 Send the HTML that defines the page in the message body. If the request is successful, Microsoft Graph returns a 201 HTTP status code.
 
@@ -16,13 +16,18 @@ Send the HTML that defines the page in the message body. If the request is succe
 <a name="request-uri"></a>
 ## Construct the request URI
 
-To construct the request URI, start with the service root URL:
+To construct the POST request URI, start with the service root URL:
 
 `https://graph.microsoft.com/v1.0/me/onenote`
 
 Then append the *pages* endpoint:
 
+**Create a page in any section (specified by section name)**
+
+`.../pages?sectionName=DefaultSection`
+
 **Create a page in any section (specified by ID)** 
+
 `.../sections/{section-id}/pages` 
 
 If you're creating pages in the user's personal notebook, Microsoft Graph also provides endpoints you can use to create pages in the default notebook:
@@ -34,8 +39,8 @@ If you're creating pages in the user's personal notebook, Microsoft Graph also p
 
 
 Your full request URI will look like one of these examples:
-* `https://graph.microsoft.com/v1.0/me/onenote/sections/{id}/pages?sectionName=Homework`</p>
-* `https://graph.microsoft.com/v1.0/me/onenote/sections/{id}/pages`</p>
+* `https://graph.microsoft.com/v1.0/me/onenote/sections/{id}/pages`
+* `https://graph.microsoft.com/v1.0/me/onenote/pages?sectionName=Homework`
 
 Learn more about the [service root URL](#root-url).
 
@@ -54,13 +59,16 @@ The following rules apply when using the *sectionName* parameter to create a pag
 
 - The *sectionName* parameter is valid only with the `../notes/pages` route (not `../notes/sections/{id}/pages`).
 
-Because sections are created if they don't exist, it's safe to use this call with every page your app creates. Users might rename sections, but the API will create a new section with the section name that you supply. Note that the links returned by the API for pages in a renamed section will still reach those older pages. 
+Because sections are created if they don't exist, it's safe to use this call with every page your app creates. Users might rename sections, but the API will create a new section with the section name that you supply. 
+
+> [!NOTE]
+> The links returned by the API for pages in a renamed section will still reach those older pages. 
 
 
 <a name="message-body"></a>
 ## Construct the message body
 
-The HTML that defines page content is called *input HTML*. Input HTML supports a [subset of standard HTML and CSS](#supported-html), with the addition of custom attributes. (Custom attributes, like **data-id** and **data-render-src**, are described in [Input and output HTML](onenote_input_output_html.md).) 
+The HTML that defines page content is called *input HTML*. Input HTML supports a [subset of standard HTML and CSS](#SupportedHTMLandCSSforOneNotepages), with the addition of custom attributes. (Custom attributes, like **data-id** and **data-render-src**, are described in [Input and output HTML](onenote_input_output_html.md).) 
 
 Send the input HTML in the message body of the POST request. You can send the input HTML directly in the message body using the  `application/xhtml+xml` or `text/html` content type, or you can send it in the "Presentation" part of a multipart request. 
 

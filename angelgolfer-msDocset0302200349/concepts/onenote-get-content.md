@@ -207,9 +207,6 @@ Notebooks can expand the **sections** and **sectionGroups** properties.
 
 The default sort order for notebooks is `name asc`. 
 
-> [!NOTE]
-> You can use the `classNotebooks` endpoint to [get class notebooks](onenote_classnotebook.md).
-
 - - -
 
 <a name="get-notebook"></a>
@@ -220,9 +217,6 @@ Get a specific notebook
 
 
 Notebooks can expand the **sections** and **sectionGroups** properties.
-
-> [!NOTE]
-> You can use the `classNotebooks` endpoint to [get a class notebook](onenote_classnotebook.md).
 
 - - -
 

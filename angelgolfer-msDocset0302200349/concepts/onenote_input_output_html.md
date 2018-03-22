@@ -154,7 +154,8 @@ By default, images won't render directly in a browser because they are private a
     src="https://graph.microsoft.com/v1.0/me/onenote/resources/{image-id}/content?publicAuth=true&mimeType=image/jpeg" 
     data-src-type="image/{type}" 
     data-fullres-src="https://graph.microsoft.com/v1.0/me/onenote/resources/{image-id}/content?publicAuth=true&mimeType=image/jpeg" 
-    data-fullres-src-type="image/{type}" />
+    data-fullres-src-type="image/{type}"
+/>
 ```
 
 The following examples show the information an **img** element might contain in the output HTML.
