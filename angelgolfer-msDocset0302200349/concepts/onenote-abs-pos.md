@@ -140,5 +140,4 @@ For more information about permission scopes and how they work, see [OneNote per
 ## Additional resources
 
 - [Create OneNote pages](onenote-create-page.md)
-- [Update OneNote page content](onenote-update-page.md)
-[!INCLUDE [additional resources](includes/additionalResources.txt)]
+- [Update OneNote page content](onenote-update-page.md)[!INCLUDE [additional resources](includes/additionalResources.txt)]
