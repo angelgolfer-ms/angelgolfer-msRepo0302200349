@@ -62,9 +62,9 @@ Reports
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Users | Azure AD | Supports user-centric functionality across Microsoft Graph. | [Microsoft Graph users overview](../concepts/azuread-users-concept-overview.md) |
-| Identity management | Azure AD | Creates and manages directory resources such as users, groups, and applications. | [Azure AD identity management overview](../concepts/azuread-identity-concept-overview.md)  |
-| Policies and permissions | Azure AD | Grants users, groups, and applications access to resources and data. | [Azure AD permissions and policies overview](../concepts/azuread-permissions-policies-concept-overview.md) |
+| Users | Azure AD | Supports user-centric functionality across Microsoft Graph. | [Microsoft Graph users API overview](../concepts/azuread-users-concept-overview.md)|
+| Identities | Azure AD | Creates and manages directory resources such as users, groups, and applications. | [Azure AD identities API overview](../concepts/azuread-identities-concept-overview.md)  |
+| Access control | Azure AD | Grants users, groups, and applications access to resources and data. | [Azure AD access control API overview](../concepts/azuread-access-control-concept-overview.md) |
 
 
 ## Productivity
