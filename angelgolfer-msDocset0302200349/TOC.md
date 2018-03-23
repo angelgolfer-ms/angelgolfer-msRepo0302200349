@@ -42,7 +42,7 @@
 # [Personal contacts](concepts/outlook-contacts-concept-overview.md)
 # [Plans and tasks (Planner)](concepts\planner-concept-overview.md)
 # [Security intelligence](concepts\azuread-security-intel-concept-overview.md)
-# [Shared sites (SharePoint)](sharepoint-concept-overview.md)
+# [Shared sites (SharePoint)](concepts\sharepoint-concept-overview.md)
 # [Social intelligence](concepts/social-intel-concept-overview.md)
 ## [Get relevant people](concepts/people_example.md)
 # [Teamwork (Microsoft Teams) (preview)](concepts\teams-concept-overview.md)

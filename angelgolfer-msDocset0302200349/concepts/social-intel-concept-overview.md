@@ -1,4 +1,4 @@
-# Microsoft Graph social intelligence and analytics API overview
+# Overview of social intelligence and analytics in Microsoft Graph
 
 {1-2 sentences about the value of this feature/service to its target customers.} 
 {This topic is meant to include both insights doc-focused API, and people API.}

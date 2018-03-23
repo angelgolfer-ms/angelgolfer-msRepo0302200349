@@ -1,4 +1,4 @@
-# Azure AD security intelligence API overview
+# Azure AD security intelligence in Microsoft Graph
 
 {1-2 sentences about the value of this feature/service to its target customers.} 
 
