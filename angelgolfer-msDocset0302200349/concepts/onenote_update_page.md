@@ -73,7 +73,7 @@ The element to update. The value must be one of the following identifiers:
 
 | Identifier | Description |  
 |------|------|  
-| #{data-id} | <p>This ID is optionally defined on elements in the input HTML when [creating a page](onenote_create_page.md) or [updating a page](onenote_update_page.md). Prefix the value with a #.</p><p> Example: `'target':'#intro'` targets the element `<div data-id="intro" ...>`</p> |  
+| #{data-id} | <p>This ID is optionally defined on elements in the input HTML when [creating a page](onenote-create-page.md) or [updating a page](onenote_update_page.md). Prefix the value with a #.</p><p> Example: `'target':'#intro'` targets the element `<div data-id="intro" ...>`</p> |  
 | id | <p>This is the [generated ID](#generated-ids) from Microsoft Graph, and is required for most replace operations. Do not prefix with a #.</p><p> Example: `'target':'div:{33f8a2...}{37}'` targets the element `<div id="div:{33f8a2...}{37}" ...>`</p><p>Don't confuse these with any **id** values defined in the [input HTML](onenote_input_output_html.md). All **id** values sent in the input HTML are discarded.</p> |  
 | body | The keyword that targets the first div on the page. Do not prefix with a #. |  
 | title | The keyword that targets the page title. Do not prefix with a #. |  
@@ -329,7 +329,7 @@ The following example uses the replace action to change a to-do check box item t
 ]
 ```
 
-See [Use note tags](onenote_note_tags.md) for more about using the **data-tag** attribute.
+See [Use note tags](onenote-note-tags.md) for more about using the **data-tag** attribute.
 
 
 <a name="complete-requests"></a>

@@ -7,7 +7,7 @@ Use the OneNote API to extract business card data from an image, or recipe and p
 <a name="attributes"></a>
 ## Extraction attributes
 
-To extract and transform data, simply include a div that specifies the source content, extraction method, and fallback behavior in your [create-page](onenote_create_page.md) or [update-page](onenote_update_page.md) request. The API renders extracted data on the page in an easy-to-read format. 
+To extract and transform data, simply include a div that specifies the source content, extraction method, and fallback behavior in your [create-page](onenote-create-page.md) or [update-page](onenote_update_page.md) request. The API renders extracted data on the page in an easy-to-read format. 
 
 ```
 <div
