@@ -86,7 +86,7 @@ Reports
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
 | Calendar | Outlook  | Lets users set up appointments and meetings on the web, mobile and desktop devices. It is part of the Outlook messaging communication hub in Office 365 that also lets users manage emails and contacts. | [Outlook calendar overview](../concepts/outlook-calendar-concept-overview.md)  |
-| Files | OneDrive | Manages and shares user files on OneDrive, OneDrive for Business, and SharePoint document libraries. | [OneDrive files storage overview](../concepts/onedrive-concept-overview.md) |
+| Files | OneDrive and SharePoint | Manages and shares user files on OneDrive and SharePoint. | [OneDrive files storage overview](../concepts/onedrive-concept-overview.md) |
 | Mail | Outlook | Lets users communicate, organize messages, and manage priorities in their workflows, on the web, mobile and desktop devices. It is part of the Outlook communication hub in Office 365 that also lets users manage contacts and schedule meetings. | [Outlook mail overview](../concepts/outlook-mail-concept-overview.md) |
 | Notes | OneNote | Lets users plan and organize ideas and information. | [OneNote API overview](../concepts/integrate_with_onenote.md) |
 | Personal contacts | Outlook | Contacts manager on the web, mobile and desktop devices. It is part of the Outlook messaging communication hub in Office 365 that also lets users manage emails and schedule meetings.  | [Outlook personal contacts overview](../concepts/outlook-contacts-concept-overview.md) |
@@ -100,7 +100,7 @@ Reports
 -->
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Shared sites and content  | SharePoint | Web-based platform for users and Office 365 groups to share, organize, manage, and discover content (including lists, files, and notes). | [SharePoint sites and content overview](../concepts/sharepoint-concept-overview.md) | 
+| Sites and lists  | SharePoint | Web-based platform for users and Office 365 groups to share, organize, manage, and discover content (including lists, files, and notes). | [SharePoint sites and content overview](../concepts/sharepoint-concept-overview.md) | 
 |Tasks and plans | Planner | Enables users in Office 365 groups to create plans, assign tasks, and track progress. | [Planner plans and tasks overview](../concepts/planner-concept-overview.md) |
 |Teamwork (preview) |  Microsoft Teams | Digital hub and chat-based workspace for teams to share files, notes, calendar, and plans. | [Microsoft Teams teamwork overview](../concepts/teams-concept-overview.md) |
 
