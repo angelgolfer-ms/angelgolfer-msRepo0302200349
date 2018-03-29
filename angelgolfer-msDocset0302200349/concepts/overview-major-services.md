@@ -6,7 +6,7 @@ Microsoft Graph enables you to integrate with the best of Office 365, Windows 10
 
 At the core of Microsoft Graph are the concepts of the user and group. 
 
-The user is the focal point whose identity is protected and access is well managed. It's the user's data - that is made available by services and features in Microsoft Graph as rich static contexts, real-time updates, and deep insights - that drives businesses. 
+The user is the focal point whose identity is protected and access is well managed. It's the user's data that drives businesses. Microsoft Graph services makes this data available to businesses in rich contexts, real-time updates, and deep insights.
 
 Groups form the fundamental fabric enabling user collaboration, and integration with other services to support richer scenarios in task planning, teamwork, education, and more.
 
@@ -124,8 +124,8 @@ Reports
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
+| Security intelligence: security graph | Azure AD | Provides a unified gateway to security insights and actions across Microsoft solutions. | [Security intelligence in Microsoft Graph](../concepts/azuread-security-intel-concept-overview.md) |
 | Security intelligence: identity risk detection | Azure AD | Gets information about risk events in user accounts detected by adaptive machine learning. | [Security intelligence in Microsoft Graph](../concepts/azuread-security-intel-concept-overview.md)  |
-| Security intelligence: security | Azure AD | Provides a unified gateway to security insights and actions across Microsoft solutions. | [Security intelligence in Microsoft Graph](../concepts/azuread-security-intel-concept-overview.md) |
 
 
 ## Cross-device experiences
