@@ -74,14 +74,14 @@ Reports
 
 -->
 
-## Identity and access management
+### Identity and access management
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
 | Identity and access management | Azure AD | Creates and manages directory resources such as users, groups, and applications, granting them access to resources and data. | [Azure AD identity and access management overview](../concepts/azuread-identity-access-management-concept-overview.md)  |
 
 
-## Productivity
+### Productivity
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
@@ -94,7 +94,7 @@ Reports
 | Workbooks and charts | Excel | Lets users use Excel spreadsheets to do complex calculations, track, analyze, and visualize data, and generate professional reports. | [Excel workbooks and charts overview](../concepts/excel-concept-overview.md) |
 
 
-## Collaboration
+### Collaboration
 
 <!-- Want to update links to concept overviews as they are created over time. 
 -->
@@ -105,7 +105,7 @@ Reports
 |Teamwork (preview) |  Microsoft Teams | Digital hub and chat-based workspace for teams to share files, notes, calendar, and plans. | [Microsoft Teams teamwork overview](../concepts/teams-concept-overview.md) |
 
 
-## Social intelligence and analytics
+### Social intelligence and analytics
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
@@ -113,14 +113,14 @@ Reports
 | Social intelligence: people | OneDrive, Outlook, SharePoint | Gets information about persons as ordered by their relevance to a user, determined by the user's communication and collaboration patterns, and business relationships.  | [Social intelligence in Microsoft Graph](../concepts/social-intel-concept-overview.md) |
 
 
-## Device management
+### Device management
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
 |Devices and apps | Intune | Enrolls and configures devices, and manages mobile applications in your organization. | [Intune devices and apps overview](../concepts/intune-concept-overview.md) |
 
 
-## Security intelligence
+### Security intelligence
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
@@ -128,21 +128,21 @@ Reports
 | Security intelligence: identity risk detection | Azure AD | Gets information about risk events in user accounts detected by adaptive machine learning. | [Security intelligence in Microsoft Graph](../concepts/azuread-security-intel-concept-overview.md)  |
 
 
-## Cross-device experiences
+### Cross-device experiences
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
 | Cross-device experiences (preview) | Project Rome, Windows | Enables app experiences that transcend a single device, and instead move with the user from device to device regardless of its type and platform. | [Overview for Project Rome cross-device experiences](../concepts/project-rome-concept-overview.md) |
 
 
-## Usage reports and audit logs
+### Usage reports and audit logs
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
 | Reports | Azure AD, OneDrive, Outlook, SharePoint, and more | Gets activity and usage information of a supported service. | [Service usage reports overview](../api-reference/v1.0/resources/report.md) |
 
 
-## Education
+### Education
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
