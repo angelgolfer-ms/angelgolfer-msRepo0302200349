@@ -1,8 +1,8 @@
 # Major services and features in Microsoft Graph
 
-Microsoft Graph enables you to integrate with the best of Office 365, Windows 10, and enterprise mobility and security services in Microsoft 365. Additionally, you can leverage social and security intelligence to boost user productivity, creativity, and team collaboration, and to protect business resources and users' data. 
+Microsoft Graph enables you to integrate with the best of Office 365, Windows 10, and Enterprise Mobility and Security services in Microsoft 365. Additionally, you can take advantage of social and security intelligence to boost user productivity, creativity, and team collaboration, and to protect business resources and users' data. 
 
-Some services in Microsoft Graph make their debut there, others have been well-known as standalone services and are now converging in Microsoft Graph. Their API sets follow a streamlined design as detailed in the [Microsoft REST API guidelines](https://github.com/Microsoft/api-guidelines), and are now accessible through the single Microsoft Graph REST endpoint `https://graph.microsoft.com`. The major services and features are listed below by category. 
+Some services in Microsoft Graph make their debut there, others have been well-known as standalone services and are now converging in Microsoft Graph. Their API sets follow a streamlined design as detailed in the [Microsoft REST API guidelines](https://github.com/Microsoft/api-guidelines), and are now accessible through the single Microsoft Graph REST endpoint `https://graph.microsoft.com`. The following are the major services and features, listed by category. 
 
 <!-- Per M365 enterprise categorization on https://www.microsoft.com/en-us/microsoft-365/enterprise/home
 
@@ -58,26 +58,26 @@ Reports
 
 -->
 
-## Identity and access management
+## Users, identity and access management
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Users | Azure AD | Supports user-centric functionality across Microsoft Graph. | [Microsoft Graph users overview](../concepts/azuread-users-concept-overview.md)|
-| Identities | Azure AD | Creates and manages directory resources such as users, groups, and applications. | [Azure AD identities overview](../concepts/azuread-identities-concept-overview.md)  |
-| Access control | Azure AD | Grants users, groups, and applications access to resources and data. | [Azure AD access control overview](../concepts/azuread-access-control-concept-overview.md) |
+| Users | Azure AD and most productivity, collaboration, intelligence, and education services | A core focus of Microsoft Graph with user-centric functionality across most services built around it. | [Microsoft Graph users overview](../concepts/azuread-users-concept-overview.md)|
+| Identity and access management | Azure AD | Creates and manages directory resources such as users, groups, and applications, granting them access to resources and data. | [Azure AD identity and access management overview](../concepts/azuread-identity-access-management-concept-overview.md)  |
+
 
 
 ## Productivity
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Calendar | Outlook  | Calendaring client for users to set up appointments and meetings on the web, mobile and desktop devices. Calendar is part of the Outlook messaging communication hub in Office 365 that also lets users manage emails and contacts. | [Outlook calendar overview](../concepts/outlook-calendar-concept-overview.md)  |
-| Files | OneDrive | Manage and share user files on OneDrive, OneDrive for Business, and SharePoint document libraries. | [OneDrive files storage overview](../concepts/onedrive-concept-overview.md) |
-| Mail | Outlook | Email client for users to communicate, organize messages, and manage priorities in their workflows, on the web, mobile and desktop devices. Mail is part of the Outlook messaging communication hub in Office 365 that also lets users manage contacts and schedule meetings. | [Outlook mail overview](../concepts/outlook-mail-concept-overview.md) |
+| Calendar | Outlook  | Lets users set up appointments and meetings on the web, mobile and desktop devices. It is part of the Outlook messaging communication hub in Office 365 that also lets users manage emails and contacts. | [Outlook calendar overview](../concepts/outlook-calendar-concept-overview.md)  |
+| Files | OneDrive | Manages and shares user files on OneDrive, OneDrive for Business, and SharePoint document libraries. | [OneDrive files storage overview](../concepts/onedrive-concept-overview.md) |
+| Mail | Outlook | Lets users communicate, organize messages, and manage priorities in their workflows, on the web, mobile and desktop devices. It is part of the Outlook communication hub in Office 365 that also lets users manage contacts and schedule meetings. | [Outlook mail overview](../concepts/outlook-mail-concept-overview.md) |
 | Notes | OneNote | Lets users plan and organize ideas and information. | [OneNote API overview](../concepts/integrate_with_onenote.md) |
 | Personal contacts | Outlook | Contacts manager on the web, mobile and desktop devices. It is part of the Outlook messaging communication hub in Office 365 that also lets users manage emails and schedule meetings.  | [Outlook personal contacts overview](../concepts/outlook-contacts-concept-overview.md) |
-| To-do tasks (preview) | Outlook | Tracks the start, due, and actual completion dates of to-do work items, and their recurrence, reminders, and status. Available on the web, mobile and desktop devices. It is part of the Outlook messaging communication hub in Office 365 that also lets users manage emails and contacts, and schedule meetings. | [Outlook to-do tasks overview](../concepts/outlook-tasks-concept-overview.md)  |
-| Workbooks and charts | Excel | Spreadsheet client that lets users do complex calculations, track, analyze, and visualize data, and do professional reporting. | [Excel workbooks and charts overview](../concepts/excel-concept-overview.md) |
+| To-do tasks (preview) | Outlook | Lets users track the start, due, and actual completion dates of to-do work items, and their recurrence, reminders, and status. It is part of the Outlook communication hub in Office 365 that also lets users manage emails and contacts, and schedule meetings. | [Outlook to-do tasks overview](../concepts/outlook-tasks-concept-overview.md)  |
+| Workbooks and charts | Excel | Lets users use Excel spreadsheets to do complex calculations, track, analyze, and visualize data, and generate professional reports. | [Excel workbooks and charts overview](../concepts/excel-concept-overview.md) |
 
 
 ## Collaboration
@@ -87,9 +87,9 @@ Reports
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
 |Groups | Azure AD, OneDrive, OneNote, Outlook, Planner | Office 365 groups for users to share conversations, files, notes, calendar, and plans. | [Office 365 groups overview](../concepts/office365-groups-concept-overview.md) |
-| Shared sites and content  | SharePoint | Web-based platform for users and Office 365 groups to share and manage content (including lists, files, and notes). | [SharePoint sites and content overview](../concepts/sharepoint-concept-overview.md) | 
+| Shared sites and content  | SharePoint | Web-based platform for users and Office 365 groups to share, organize, manage, and discover content (including lists, files, and notes). | [SharePoint sites and content overview](../concepts/sharepoint-concept-overview.md) | 
 |Tasks and plans | Planner | Enables users in Office 365 groups to create plans, assign tasks, and track progress. | [Planner plans and tasks overview](../concepts/planner-concept-overview.md) |
-|Teamwork (preview) |  Microsoft Teams | Chat-based workspace for teams to share files, notes, calendar, and plans. | [Microsoft Teams teamwork overview](../concepts/teams-concept-overview.md) |
+|Teamwork (preview) |  Microsoft Teams | Digital hub and chat-based workspace for teams to share files, notes, calendar, and plans. | [Microsoft Teams teamwork overview](../concepts/teams-concept-overview.md) |
 
 
 ## Social intelligence and analytics
@@ -104,15 +104,15 @@ Reports
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-|Mobile app and device management | Intune | Manages your organization’s mobile applications, and enrolls and configures devices. | [Intune devices and apps   overview](../concepts/intune-concept-overview.md) |
+|Devices and apps | Intune | Enrolls and configures devices, and manages mobile applications in your organization. | [Intune devices and apps overview](../concepts/intune-concept-overview.md) |
 
 
 ## Security intelligence
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Security intelligence: identity risk detection | Azure AD | Gets information about risk events in user accounts detected by adaptive machine learning. | [Azure AD security intelligence in Microsoft Graph](../concepts/azuread-security-intel-concept-overview.md)  |
-| Security intelligence: security | Azure AD | Provides a unified gateway to security insights and actions across Microsoft solutions. | [Azure AD security intelligence in Microsoft Graph](../concepts/azuread-security-intel-concept-overview.md) |
+| Security intelligence: identity risk detection | Azure AD | Gets information about risk events in user accounts detected by adaptive machine learning. | [Security intelligence in Microsoft Graph](../concepts/azuread-security-intel-concept-overview.md)  |
+| Security intelligence: security | Azure AD | Provides a unified gateway to security insights and actions across Microsoft solutions. | [Security intelligence in Microsoft Graph](../concepts/azuread-security-intel-concept-overview.md) |
 
 
 ## Cross-device experiences
@@ -144,4 +144,4 @@ Reports
 1. See examples of creative solutions built on top of services in Microsoft Graph that solve real customer problems.
 2. Look under **Learn** in the table of contents to read about services and features that _you_ can leverage in your scenarios.
 3. Try a sample request in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-4. Use the [quick start](https://developer.microsoft.com/graph/quick-start) to set up a ready-to-run sample app.
+4. Use [quick starts](https://developer.microsoft.com/graph/quick-start) to set up a ready-to-run sample app.
