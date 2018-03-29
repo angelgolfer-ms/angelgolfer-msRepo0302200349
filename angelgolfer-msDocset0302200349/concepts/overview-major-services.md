@@ -2,6 +2,22 @@
 
 Microsoft Graph enables you to integrate with the best of Office 365, Windows 10, and Enterprise Mobility and Security services in Microsoft 365. Additionally, you can take advantage of social and security intelligence to boost user productivity, creativity, and team collaboration, and to protect business resources and users' data. 
 
+## Users and groups
+
+At the core of Microsoft Graph are the concepts of the user and group. 
+
+The user is the focal point whose identity is protected and access is well managed. It's the user's data - that is made available by services and features in Microsoft Graph as rich static contexts, real-time updates, and deep insights - that drives businesses. 
+
+Groups form the fundamental fabric enabling user collaboration, and integration with other services to support richer scenarios in task planning, teamwork, education, and more.
+
+|Feature     |Supporting services  |Description |More information |
+|:-----------|:--------------------|:-----------|:----------------|
+| Users | Azure AD and most productivity, collaboration, intelligence, and education services | A core focus of Microsoft Graph with user-centric functionality across most services built around it. | [Microsoft Graph users overview](../concepts/azuread-users-concept-overview.md)|
+|Groups | Azure AD, OneDrive, OneNote, Outlook, Planner | Office 365 groups provide the fundamental collaborative unit for users to share conversations, files, notes, calendar, and plans. | [Office 365 groups overview](../concepts/office365-groups-concept-overview.md) |
+
+
+## Services and features
+
 Some services in Microsoft Graph make their debut there, others have been well-known as standalone services and are now converging in Microsoft Graph. Their API sets follow a streamlined design as detailed in the [Microsoft REST API guidelines](https://github.com/Microsoft/api-guidelines), and are now accessible through the single Microsoft Graph REST endpoint `https://graph.microsoft.com`. The following are the major services and features, listed by category. 
 
 <!-- Per M365 enterprise categorization on https://www.microsoft.com/en-us/microsoft-365/enterprise/home
@@ -58,13 +74,11 @@ Reports
 
 -->
 
-## Users, identity and access management
+## Identity and access management
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Users | Azure AD and most productivity, collaboration, intelligence, and education services | A core focus of Microsoft Graph with user-centric functionality across most services built around it. | [Microsoft Graph users overview](../concepts/azuread-users-concept-overview.md)|
 | Identity and access management | Azure AD | Creates and manages directory resources such as users, groups, and applications, granting them access to resources and data. | [Azure AD identity and access management overview](../concepts/azuread-identity-access-management-concept-overview.md)  |
-
 
 
 ## Productivity
@@ -86,7 +100,6 @@ Reports
 -->
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-|Groups | Azure AD, OneDrive, OneNote, Outlook, Planner | Office 365 groups for users to share conversations, files, notes, calendar, and plans. | [Office 365 groups overview](../concepts/office365-groups-concept-overview.md) |
 | Shared sites and content  | SharePoint | Web-based platform for users and Office 365 groups to share, organize, manage, and discover content (including lists, files, and notes). | [SharePoint sites and content overview](../concepts/sharepoint-concept-overview.md) | 
 |Tasks and plans | Planner | Enables users in Office 365 groups to create plans, assign tasks, and track progress. | [Planner plans and tasks overview](../concepts/planner-concept-overview.md) |
 |Teamwork (preview) |  Microsoft Teams | Digital hub and chat-based workspace for teams to share files, notes, calendar, and plans. | [Microsoft Teams teamwork overview](../concepts/teams-concept-overview.md) |
