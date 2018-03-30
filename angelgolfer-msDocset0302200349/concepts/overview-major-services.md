@@ -78,7 +78,7 @@ Reports
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Identity and access management | Azure AD | Creates and manages directory resources such as users, groups, and applications, granting them access to resources and data. | [Azure AD identity and access management overview](../concepts/azuread-identity-access-management-concept-overview.md)  |
+| Identity and access management | Azure AD | Creates and manages directory resources such as users, groups, and applications. Manages access to resources and data. | [Azure AD identity and access management overview](../concepts/azuread-identity-access-management-concept-overview.md)  |
 
 
 ## Productivity
@@ -146,7 +146,7 @@ Reports
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Education (preview) | Azure AD, Education | Supports schools, enrolments, and assignments, empowering educators to unlock creativity, promote teamwork, and provide a simple and safe experience for education. | [Education overview](../concepts/education-concept-overview.md) |
+| Education (preview) | Azure AD, Education | Provides information relevant for education scenarios, including schools, classes, students, teachers, and assignment info. Enables ISVs to build applications for the classroom that save teachers time and promote teamwork and collaboration.  | [Education overview](../concepts/education-concept-overview.md) |
 
 
 ## Next steps
