@@ -39,7 +39,7 @@
 ## [Error codes](concepts/onenote_error_codes.md)
 ## [Best practices](concepts/onenote_best_practices.md)
 # [Personal contacts](concepts/outlook-contacts-concept-overview.md)
-# [Security intelligence](concepts\azuread-security-intel-concept-overview.md)
+# [Security intelligence](concepts\security-intel-concept-overview.md)
 # [Sites and lists (SharePoint)](concepts\sharepoint-concept-overview.md)
 # [Social intelligence](concepts/social-intel-concept-overview.md)
 ## [Get relevant people](concepts/people_example.md)
