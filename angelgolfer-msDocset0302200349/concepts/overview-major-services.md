@@ -132,7 +132,7 @@ Reports
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Cross-device experiences (preview) | Project Rome, Windows | Enables app experiences that transcend a single device, and instead move with the user from device to device regardless of its type and platform. | [Overview for Project Rome cross-device experiences](../concepts/project-rome-concept-overview.md) |
+| Cross-device app continuance | Cross-device experiences | Enables app experiences that transcend a single device, and instead move with the user from device to device regardless of its type and platform. | [Overview for Project Rome cross-device experiences](../concepts/project-rome-concept-overview.md) |
 
 
 ## Usage reports and audit logs

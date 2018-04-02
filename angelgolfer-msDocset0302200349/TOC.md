@@ -24,7 +24,7 @@
 # [Groups](concepts\office365-groups-concept-overview.md)
 # [Calendar (Outlook)](concepts\outlook-calendar-concept-overview.md)
 ## [Find meeting times](concepts\findmeetingtimes_example.md)
-# [Cross devices (Project Rome) (preview)](concepts\project-rome-concept-overview.md)
+# [Cross-device experiences](concepts\project-rome-concept-overview.md)
 # [Devices and apps (Intune)](concepts\intune-concept-overview.md)
 # [Education](concepts\education-concept-overview.md)
 # [Files (OneDrive)](concepts\onedrive-concept-overview.md)
@@ -982,7 +982,7 @@
 ##### [Create multi-value property](api-reference/beta/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md)
 ##### [Get multi-value property](api-reference/beta/api/multivaluelegacyextendedproperty_get.md)
 
-## [Cross devices (Project Rome)](api-reference/beta/resources/project_rome_overview.md)
+## [Cross-device experiences](api-reference/beta/resources/project_rome_overview.md)
 ### [List user devices](api-reference/beta/api/user_list_devices.md)
 ### [Send device command](api-reference/beta/api/send_device_command.md)
 ### [Get device command status](api-reference/beta/api/get_device_command_status.md)
