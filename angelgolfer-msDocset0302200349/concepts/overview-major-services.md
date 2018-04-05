@@ -1,6 +1,6 @@
 # Major services and features in Microsoft Graph
 
-Microsoft Graph enables you to integrate with the best of Office 365, Windows 10, and Enterprise Mobility and Security services in Microsoft 365. Additionally, you can take advantage of social and security intelligence to boost user productivity, creativity, and team collaboration, and to protect business resources and users' data. 
+Microsoft Graph enables you to integrate with the best of Office 365, Windows 10, and Enterprise Mobility and Security services in Microsoft 365. Additionally, you can take advantage of security and social intelligence to boost user productivity, creativity, and team collaboration, and to protect business resources and users' data. 
 
 ## Users and groups
 
@@ -120,12 +120,12 @@ Reports
 |Devices and apps | Intune | Enrolls and configures devices, and manages mobile applications in your organization. | [Intune devices and apps overview](../concepts/intune-concept-overview.md) |
 
 
-## Security intelligence
+## Security
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Security intelligence: security graph | Azure AD | Provides a unified gateway to security insights and actions across Microsoft solutions. | [Security intelligence in Microsoft Graph](../concepts/security-intel-concept-overview.md) |
-| Security intelligence: identity risk detection | Azure AD | Gets information about risk events in user accounts detected by adaptive machine learning. | [Security intelligence in Microsoft Graph](../concepts/security-intel-concept-overview.md)  |
+| Security: security graph | Azure AD | Provides a unified gateway to security insights and actions across Microsoft solutions. | [Security in Microsoft Graph](../concepts/security-intel-concept-overview.md) |
+| Security: identity risk detection | Azure AD | Gets information about risk events in user accounts detected by adaptive machine learning. | [Security in Microsoft Graph](../concepts/security-intel-concept-overview.md)  |
 
 
 ## Cross-device experiences
