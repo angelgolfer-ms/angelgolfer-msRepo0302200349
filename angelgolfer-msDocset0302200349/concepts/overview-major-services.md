@@ -132,21 +132,21 @@ Reports
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Cross-device app continuance | Cross-device experiences | Enables app experiences that transcend a single device, and instead move with the user from device to device regardless of its type and platform. | [Overview for Project Rome cross-device experiences](../concepts/project-rome-concept-overview.md) |
+| Cross-device app continuance | Cross-device experiences | Enables app experiences that transcend a single device, and instead move with the user from device to device regardless of its type and platform. | [Overview for cross-device experiences](../concepts/project-rome-concept-overview.md) |
 
 
-## Usage reports and audit logs
+## Usage reports
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Reports | Azure AD, OneDrive, Outlook, SharePoint, and more | Gets activity and usage information of a supported service. | [Service usage reports overview](../api-reference/v1.0/resources/report.md) |
+| Reports | Azure AD, OneDrive, Outlook, SharePoint, and more | Gets activity and usage information of a supported service. | [Usage reports overview](../concepts/reportroot-concept-overview.md) |
 
 
 ## Education
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Education (preview) | Azure AD, Education | Provides information relevant for education scenarios, including schools, classes, students, teachers, and assignment info. Enables ISVs to build applications for the classroom that save teachers time and promote teamwork and collaboration.  | [Education overview](../concepts/education-concept-overview.md) |
+| Education | Azure AD, Education | Provides information relevant for education scenarios, including schools, classes, students, teachers, and assignment info. Enables ISVs to build applications for the classroom that save teachers time and promote teamwork and collaboration.  | [Education overview](../concepts/education-concept-overview.md) |
 
 
 ## Next steps
