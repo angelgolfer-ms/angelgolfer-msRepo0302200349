@@ -297,8 +297,12 @@
 ##### [Create multi-value property](api-reference/v1.0/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md)
 ##### [Get multi-value property](api-reference/v1.0/api/multivaluelegacyextendedproperty_get.md)
 
+## Cross-device experiences
+### Activity feed
 
 ## Devices and apps (Intune)
+
+## Education
 
 ## [Files (OneDrive)](api-reference/v1.0/resources/onedrive.md)
 ### [Drives](api-reference/v1.0/resources/drive.md)
@@ -439,6 +443,7 @@
 #### [Multi-value extended property](api-reference/v1.0/resources/multivaluelegacyextendedproperty.md)
 ##### [Create multi-value property](api-reference/v1.0/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md)
 ##### [Get multi-value property](api-reference/v1.0/api/multivaluelegacyextendedproperty_get.md)
+
 ## [Notes (OneNote)](concepts/integrate_with_onenote.md)
 ### [Notes](api-reference/v1.0/resources/onenote.md)
 #### [List notebooks](api-reference/v1.0/api/onenote_list_notebooks.md)
@@ -481,10 +486,6 @@
 ### [Resources](api-reference/v1.0/resources/resource.md)
 #### [Get resource](api-reference/v1.0/api/resource_get.md)
 
-## [People](api-reference/v1.0/resources/social_overview.md)
-### [Person](api-reference/v1.0/resources/person.md)
-#### [List people](api-reference/v1.0/api/user_list_people.md)
-#### [Get person](api-reference/v1.0/api/person_get.md)
 ## [Personal contacts](api-reference/v1.0/resources/contact.md)
 ### [Contact](api-reference/v1.0/resources/contact.md)
 #### [List contacts](api-reference/v1.0/api/user_list_contacts.md)
@@ -594,7 +595,27 @@
 #### [Get group counts](api-reference/v1.0/api/reportroot_getyammergroupsactivitygroupcounts.md)
 #### [Get activity counts](api-reference/v1.0/api/reportroot_getyammergroupsactivitycounts.md)
 
-## [Tasks  and plans (Planner)](api-reference/v1.0/resources/planner_overview.md)
+## [Sites and lists (SharePoint)](api-reference/v1.0/resources/sharepoint.md)
+### [Sites](api-reference/v1.0/resources/site.md)
+#### [Get site](api-reference/v1.0/api/site_get.md)
+#### [Get lists](api-reference/v1.0/api/list_list.md)
+#### [List subsites](api-reference/v1.0/api/subsites_list.md)
+### [Lists](api-reference/v1.0/resources/list.md)
+#### [Get list](api-reference/v1.0/api/list_get.md)
+#### [Get items](api-reference/v1.0/api/listitem_list.md)
+#### [Create list](api-reference/v1.0/api/list_create.md)
+### [ListItems](api-reference/v1.0/resources/listitem.md)
+#### [Get item](api-reference/v1.0/api/listitem_get.md)
+#### [Create item](api-reference/v1.0/api/listitem_create.md)
+#### [Update item](api-reference/v1.0/api/listitem_update.md)
+#### [Delete item](api-reference/v1.0/api/listitem_delete.md)
+
+## [Social intelligence: People](api-reference/v1.0/resources/social_overview.md)
+### [Person](api-reference/v1.0/resources/person.md)
+#### [List people](api-reference/v1.0/api/user_list_people.md)
+#### [Get person](api-reference/v1.0/api/person_get.md)
+
+## [Tasks and plans (Planner)](api-reference/v1.0/resources/planner_overview.md)
 ### [Plan](api-reference/v1.0/resources/plannerplan.md)
 #### [Create plan](api-reference/v1.0/api/planner_post_plans.md)
 #### [List plans for group](api-reference/v1.0/api/plannergroup_list_plans.md)
@@ -629,21 +650,6 @@
 ### [Progress task board task format](api-reference/v1.0/resources/plannerprogresstaskboardtaskformat.md)
 #### [Get progress task board format](api-reference/v1.0/api/plannerprogresstaskboardtaskformat_get.md)
 #### [Update progress task board format](api-reference/v1.0/api/plannerprogresstaskboardtaskformat_update.md)
-
-## [Sites and lists (SharePoint)](api-reference/v1.0/resources/sharepoint.md)
-### [Sites](api-reference/v1.0/resources/site.md)
-#### [Get site](api-reference/v1.0/api/site_get.md)
-#### [Get lists](api-reference/v1.0/api/list_list.md)
-#### [List subsites](api-reference/v1.0/api/subsites_list.md)
-### [Lists](api-reference/v1.0/resources/list.md)
-#### [Get list](api-reference/v1.0/api/list_get.md)
-#### [Get items](api-reference/v1.0/api/listitem_list.md)
-#### [Create list](api-reference/v1.0/api/list_create.md)
-### [ListItems](api-reference/v1.0/resources/listitem.md)
-#### [Get item](api-reference/v1.0/api/listitem_get.md)
-#### [Create item](api-reference/v1.0/api/listitem_create.md)
-#### [Update item](api-reference/v1.0/api/listitem_update.md)
-#### [Delete item](api-reference/v1.0/api/listitem_delete.md)
 
 ## [Workbooks and charts (Excel)](api-reference/v1.0/resources/excel.md)
 ### [Workbook](api-reference/v1.0/resources/workbook.md)
@@ -3477,22 +3483,7 @@
 #### [Get extensionProperty](api-reference/beta/api/extensionproperty_get.md)
 #### [Update extensionproperty](api-reference/beta/api/extensionproperty_update.md)
 #### [Delete extensionProperty](api-reference/beta/api/extensionproperty_delete.md)
-### [Identity protection](api-reference/beta/resources/identityprotection_root.md)
-#### [Identity risk events](api-reference/beta/resources/identityriskevent.md)
-##### [List identityRiskEvent](api-reference/beta/api/identityriskevent_list.md)
-##### [Get identityRiskEvent](api-reference/beta/api/identityriskevent_get.md)
-##### [List anonymousIpRiskEvent](api-reference/beta/api/anonymousipriskevent_list.md)
-##### [Get anonymousIpRiskEvent](api-reference/beta/api/anonymousipriskevent_get.md)
-##### [List impossibleTravelRiskEvent](api-reference/beta/api/impossibletravelriskevent_list.md)
-##### [Get impossibleTravelRiskEvent](api-reference/beta/api/impossibletravelriskevent_get.md)
-##### [List leakedCredentialsRiskEvent](api-reference/beta/api/leakedcredentialsriskevent_list.md)
-##### [Get leakedCredentialsRiskEvent](api-reference/beta/api/leakedcredentialsriskevent_get.md)
-##### [List malwareRiskEvent](api-reference/beta/api/malwareriskevent_list.md)
-##### [Get malwareRiskEvent](api-reference/beta/api/malwareriskevent_get.md)
-##### [List suspiciousIpRiskEvent](api-reference/beta/api/suspiciousipriskevent_list.md)
-##### [Get suspiciousIpRiskEvent](api-reference/beta/api/suspiciousipriskevent_get.md)
-##### [List unfamiliarLocationRiskEvent](api-reference/beta/api/unfamiliarlocationriskevent_list.md)
-##### [Get unfamiliarLocationRiskEvent](api-reference/beta/api/unfamiliarlocationriskevent_get.md)
+
 ### [Identity provider](api-reference/beta/resources/identityprovider.md)
 #### [List identity providers](api-reference/beta/api/identityprovider_list.md)
 #### [Create identity provider](api-reference/beta/api/identityprovider_post_identityproviders.md)
@@ -3811,6 +3802,25 @@
 #### [Get group counts](api-reference/beta/api/reportroot_getyammergroupsactivitygroupcounts.md)
 #### [Get activity counts](api-reference/beta/api/reportroot_getyammergroupsactivitycounts.md)
 
+## Security API
+
+## [Security: Identity protection](api-reference/beta/resources/identityprotection_root.md)
+#### [Identity risk events](api-reference/beta/resources/identityriskevent.md)
+##### [List identityRiskEvent](api-reference/beta/api/identityriskevent_list.md)
+##### [Get identityRiskEvent](api-reference/beta/api/identityriskevent_get.md)
+##### [List anonymousIpRiskEvent](api-reference/beta/api/anonymousipriskevent_list.md)
+##### [Get anonymousIpRiskEvent](api-reference/beta/api/anonymousipriskevent_get.md)
+##### [List impossibleTravelRiskEvent](api-reference/beta/api/impossibletravelriskevent_list.md)
+##### [Get impossibleTravelRiskEvent](api-reference/beta/api/impossibletravelriskevent_get.md)
+##### [List leakedCredentialsRiskEvent](api-reference/beta/api/leakedcredentialsriskevent_list.md)
+##### [Get leakedCredentialsRiskEvent](api-reference/beta/api/leakedcredentialsriskevent_get.md)
+##### [List malwareRiskEvent](api-reference/beta/api/malwareriskevent_list.md)
+##### [Get malwareRiskEvent](api-reference/beta/api/malwareriskevent_get.md)
+##### [List suspiciousIpRiskEvent](api-reference/beta/api/suspiciousipriskevent_list.md)
+##### [Get suspiciousIpRiskEvent](api-reference/beta/api/suspiciousipriskevent_get.md)
+##### [List unfamiliarLocationRiskEvent](api-reference/beta/api/unfamiliarlocationriskevent_list.md)
+##### [Get unfamiliarLocationRiskEvent](api-reference/beta/api/unfamiliarlocationriskevent_get.md)
+
 ## [Sites and lists (SharePoint)](api-reference/beta/resources/sharepoint.md)
 ### [Sites](api-reference/beta/resources/site.md)
 #### [Get site](api-reference/beta/api/site_get.md)
@@ -3839,7 +3849,7 @@
 #### [Get person](api-reference/beta/api/person_get.md)
 ### [Mention](api-reference/beta/resources/mention.md)
 
-## [Tasks  and plans (Planner)](api-reference/beta/resources/planner_overview.md)
+## [Tasks and plans (Planner)](api-reference/beta/resources/planner_overview.md)
 ### [Plan](api-reference/beta/resources/plannerplan.md)
 #### [Create plan](api-reference/beta/api/planner_post_plans.md)
 #### [List plans for group](api-reference/beta/api/plannergroup_list_plans.md)
