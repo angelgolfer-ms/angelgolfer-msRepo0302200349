@@ -3802,8 +3802,8 @@
 #### [Get group counts](api-reference/beta/api/reportroot_getyammergroupsactivitygroupcounts.md)
 #### [Get activity counts](api-reference/beta/api/reportroot_getyammergroupsactivitycounts.md)
 
-## Security
-### Security API
+## [Security](api-reference/beta/resources/security-reference-overview.md)
+### [Security API](api-reference/beta/resources/security-api-overview.md)
 ### [Security: Identity protection](api-reference/beta/resources/identityprotection_root.md)
 #### [Identity risk events](api-reference/beta/resources/identityriskevent.md)
 ##### [List identityRiskEvent](api-reference/beta/api/identityriskevent_list.md)
