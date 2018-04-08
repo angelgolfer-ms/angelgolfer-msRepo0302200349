@@ -4,15 +4,16 @@
 
 A risk event detected by [Azure Active Directory Identity Protection](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/). It is the base type for a few specific risk event types:
 
-* [sign-ins from anonymous IP addresses](anonymousipriskevent.md)
-* [sign-ins from malware-infected devices](malwareriskevent.md)
-* [impossible travel to atypical locations](impossibletravelriskevent.md)
-* [users with leaked credentials](leakedcredentialsriskevent.md)
-* [sign-ins from suspicious IP addresses](suspiciousipriskevent.md)
-* [sign-ins from unfamiliar locations](unfamiliarlocationriskevent.md)
+| Event type		 | Description|
+|:---------------|:-----------|
+|[anonymousipRiskEvent](anonymousipriskevent.md) | Sign-ins from anonymous IP addresses. |
+|[malwareRiskEvent](malwareriskevent.md) | Sign-ins from malware-infected devices. |
+|[impossibleTravelRiskEvent](impossibletravelriskevent.md) | Impossible travel to atypical locations. |
+|[leakedCredentialsRiskEvent](leakedcredentialsriskevent.md) | Users with leaked credentials. |
+|[suspiciousIpRiskEvent](suspiciousipriskevent.md) | Sign-ins from suspicious IP addresses. |
+|[unfamiliarLocationRiskEvent](unfamiliarlocationriskevent.md) | Sign-ins from unfamiliar locations. |
 
-Complete information about risk events can be found in the [Azure AD Identity Protection documentation]
-(https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/).
+Complete information about risk events can be found in the [Azure AD Identity Protection documentation](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/).
 
 
 ## Methods
