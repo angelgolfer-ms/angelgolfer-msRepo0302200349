@@ -3803,7 +3803,6 @@
 #### [Get activity counts](api-reference/beta/api/reportroot_getyammergroupsactivitycounts.md)
 
 ## [Security](api-reference/beta/resources/security-reference-overview.md)
-### [Security API](api-reference/beta/resources/security-api-overview.md)
 ### [Security: Identity protection](api-reference/beta/resources/identityprotection_root.md)
 #### [Identity risk events](api-reference/beta/resources/identityriskevent.md)
 ##### [List identityRiskEvent](api-reference/beta/api/identityriskevent_list.md)
@@ -3820,6 +3819,7 @@
 ##### [Get suspiciousIpRiskEvent](api-reference/beta/api/suspiciousipriskevent_get.md)
 ##### [List unfamiliarLocationRiskEvent](api-reference/beta/api/unfamiliarlocationriskevent_list.md)
 ##### [Get unfamiliarLocationRiskEvent](api-reference/beta/api/unfamiliarlocationriskevent_get.md)
+### [Security API](api-reference/beta/resources/security-api-overview.md)
 
 ## [Sites and lists (SharePoint)](api-reference/beta/resources/sharepoint.md)
 ### [Sites](api-reference/beta/resources/site.md)
