@@ -24,7 +24,9 @@
 # [Groups](concepts\office365-groups-concept-overview.md)
 # [Calendar (Outlook)](concepts\outlook-calendar-concept-overview.md)
 ## [Find meeting times](concepts\findmeetingtimes_example.md)
-# [Cross-device experiences](concepts\project-rome-concept-overview.md)
+# [Cross-device experiences](concepts\cross-device-concept-overview.md)
+## [Activity feed](concepts\activity-feed-concept-overview.md)
+## [Device relay (preview)](concepts\device-relay-concept-overview.md)
 # [Devices and apps (Intune)](concepts\intune-concept-overview.md)
 # [Education](concepts\education-concept-overview.md)
 # [Files (OneDrive)](concepts\onedrive-concept-overview.md)
@@ -297,8 +299,8 @@
 ##### [Create multi-value property](api-reference/v1.0/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md)
 ##### [Get multi-value property](api-reference/v1.0/api/multivaluelegacyextendedproperty_get.md)
 
-## Cross-device experiences
-### Activity feed
+## [Cross-device experiences](api-reference/v1.0/resources/cross-device-reference-overview.md)
+### [Activity feed](api-reference/v1.0/resources/activity-feed-api-overview.md)
 
 ## Devices and apps (Intune)
 
@@ -991,16 +993,19 @@
 ##### [Create multi-value property](api-reference/beta/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md)
 ##### [Get multi-value property](api-reference/beta/api/multivaluelegacyextendedproperty_get.md)
 
-## [Cross-device experiences](api-reference/beta/resources/project_rome_overview.md)
-### [List user devices](api-reference/beta/api/user_list_devices.md)
-### [Send device command](api-reference/beta/api/send_device_command.md)
-### [Get device command status](api-reference/beta/api/get_device_command_status.md)
-### [Activity](api-reference/beta/resources/projectrome_activity.md)
-#### [Create or replace an activity](api-reference/beta/api/projectrome_put_activity.md)
-#### [Delete an activity](api-reference/beta/api/projectrome_delete_activity.md)
-### [History item](api-reference/beta/resources/projectrome_historyitem.md)
-#### [Create or replace a history item](api-reference/beta/api/projectrome_put_historyitem.md)
-#### [Delete a history item](api-reference/beta/api/projectrome_delete_historyitem.md)
+## [Cross-device experiences](api-reference/beta/resources/cross-device-reference-overview.md)
+### [Activity feed](api-reference/beta/resources/activity-feed-api-overview.md)
+#### [Activity](api-reference/beta/resources/projectrome_activity.md)
+##### [Create or replace an activity](api-reference/beta/api/projectrome_put_activity.md)
+##### [Delete an activity](api-reference/beta/api/projectrome_delete_activity.md)
+#### [History item](api-reference/beta/resources/projectrome_historyitem.md)
+##### [Create or replace a history item](api-reference/beta/api/projectrome_put_historyitem.md)
+##### [Delete a history item](api-reference/beta/api/projectrome_delete_historyitem.md)
+### [Device relay](api-reference/beta/resources/device-relay-api-overview.md)
+#### Some-device resource type
+##### [List user devices](api-reference/beta/api/user_list_devices.md)
+##### [Send device command](api-reference/beta/api/send_device_command.md)
+##### [Get device command status](api-reference/beta/api/get_device_command_status.md)
 
 
 ## [Devices and apps (Intune)](api-reference/beta/resources/intune_graph_overview.md)
