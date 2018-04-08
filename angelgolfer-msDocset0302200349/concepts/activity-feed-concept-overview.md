@@ -9,4 +9,4 @@
 ## See also
 
 - [Cross-device experiences in Microsoft Graph](cross-device-concept-overview.md)
-- [Use the activity feed API to resume a user's activity across devices](../api-reference/beta/resources/activity-feed-api-overview.md)
+- [Use the activity feed API to resume a user's activity across devices](../api-reference/v1.0/resources/activity-feed-api-overview.md)
