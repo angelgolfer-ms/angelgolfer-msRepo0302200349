@@ -1,4 +1,4 @@
-# Cross-device experiences in Microsoft Graph
+# Overview for cross-device experiences in Microsoft Graph
 
 {Describe a common context for the activity feed and device relay modules, to serve developers in the explore stage of their journey.}
 
