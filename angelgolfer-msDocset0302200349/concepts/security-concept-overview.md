@@ -21,5 +21,5 @@ Then complete this section by recommending what can be done with the detected da
 
 ## Next steps
 
-- [Use the Azure AD identity protection API](identityprotection_root.md)
-- [Use the security API to integrate with Microsoft Intelligent Security Graph](security-api-overview.md)
+- [Use the Azure AD identity protection API](../api-reference/beta/resources/identityprotection_root.md)
+- [Use the security API to integrate with Microsoft Intelligent Security Graph](../api-reference/beta/resources/security-api-overview.md)
