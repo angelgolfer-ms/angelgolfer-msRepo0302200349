@@ -139,7 +139,7 @@ Reports
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Reports | Azure AD, OneDrive, Outlook, SharePoint, and more | Gets activity and usage information of a supported service. | [Usage reports overview](../concepts/reportroot-concept-overview.md) |
+| Reports | Microsoft Teams, OneDrive, Outlook, SharePoint, Skype for Business, Yammer | Gets activity and usage information of a supported service. | [Usage reports overview](../concepts/reportroot-concept-overview.md) |
 
 
 ## Education
