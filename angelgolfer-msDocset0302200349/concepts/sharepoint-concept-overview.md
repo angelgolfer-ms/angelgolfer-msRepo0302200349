@@ -1,4 +1,4 @@
-# SharePoint sites and content API overview
+# SharePoint sites and lists API overview
 
 {1-2 sentences about the value of this feature/service to its target customers.} 
 

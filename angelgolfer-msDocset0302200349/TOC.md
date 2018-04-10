@@ -42,7 +42,7 @@
 ## [Best practices](concepts/onenote_best_practices.md)
 # [Personal contacts](concepts/outlook-contacts-concept-overview.md)
 # [Reports](concepts/reportroot-concept-overview.md)
-# [Security](concepts\security-concept-overview.md)
+# [Security (preview)](concepts\security-concept-overview.md)
 # [Sites and lists (SharePoint)](concepts\sharepoint-concept-overview.md)
 # [Social intelligence](concepts/social-intel-concept-overview.md)
 ## [Get relevant people](concepts/people_example.md)
